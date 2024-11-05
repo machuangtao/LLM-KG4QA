@@ -120,7 +120,7 @@
 | 6 | A Benchmark to Understand the Role of Knowledge Graphs on Large Language Model's Accuracy for Question Answering on Enterprise SQL Databases  | GRADES-NDA  | 2024 | EnterpriseQA |  LLM and KGs for QA| [Link](https://dl.acm.org/doi/10.1145/3661304.3661901)
 | 7 | XplainLLM: A Knowledge-Augmented Dataset for Reliable Grounded Explanations in LLMs  | EMNLP  | 2024 | XplainLLM |  LLM and KGs for QA| [Link](https://arxiv.org/abs/2311.08614)
 | 8 | Developing a Scalable Benchmark for Assessing Large Language Models in Knowledge Graph Engineering  | SEMANTICS   | 2023 | [LLM-KG-Bench](https://github.com/AKSW/LLM-KG-Bench)|  LLM and KGs for QA| [Link](https://ceur-ws.org/Vol-3526/paper-04.pdf)
-| 9 | Docugami Knowledge Graph Retrieval Augmented Generation (KG-RAG) Datasets | -  | 2023 | [KG-RAG Datasets](https://github.com/docugami/KG-RAG-datasets)|  LLM and KGs for QA| [-)
+| 9 | Docugami Knowledge Graph Retrieval Augmented Generation (KG-RAG) Datasets | -  | 2023 | [KG-RAG Datasets](https://github.com/docugami/KG-RAG-datasets)|  LLM and KGs for QA| -
 
 ### Industrial Applications
 
