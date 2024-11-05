@@ -1,16 +1,16 @@
-# LLM-KG4QA: Unifying Large Language Models and Knowledge Graphs (LLM-KG) for Question Answering (QA) Repository
+# LLM-KG4QA: Unifying Large Language Models and Knowledge Graphs (LLM-KG) for Question Answering (QA)
 ## Content
-- [Unifying LLM with KGs for QA ](#llm-kg-qa)
-  - [KGs as Background Knowledg](#KGs-as-background-knowledg)
+- [Unifying LLM with KGs for QA](#1unifying-llms-and-kgs-for-qa)
+  - [KGs as Background Knowledg](#KGs-as-background-knowledge)
   - [KGs as Reasoning Guideline](#KGs-as-reasoning-guideline)
-  - [KG as Refiner and Filter](#KGs-as-refiner-and-filter)
-  - [Hybrid Methods](#hybrid-methods)
-- [Advanced Topics ](#advancement)
-  - [Explainable QA](#xqa)
+  - [KGs as Refiner and Filter](#KGs-as-refiner-and-filter)
+  <!--- - [Hybrid Methods](#hybrid-methods) -->
+- [Advanced Topics ](#2advanced-topics)
+  - [Explainable QA](#explainable-qa)
   - [Visual QA](#Visual-qa)
   - [Conversational QA](#Conversational-qa)
   - [Optimization](#optimization)
-- [Benchmark and Applications ](#benchmark-applications)
+- [Benchmark and Applications](#3benchmark-and-applications)
   - [Benchmark Dataset](#benchmark-dataset)
   - [Industrial Applications](#industrial-applications)
   - [Demo](#demo)
@@ -35,7 +35,7 @@
 | 12 | GRAG: Graph Retrieval-Augmented Generation | arXiv                                                                                         | 2024 |  Retrieval Augmented Generation    | [Link](https://arxiv.org/abs/2405.16506) 
 | 13 | KG-RAG: Bridging the Gap Between Knowledge and Creativity | arXiv                                                                                         | 2024 |  Retrieval Augmented Generation    | [Link](https://arxiv.org/abs/2405.12035)
 | 14 | Retrieval-Augmented Generation with Knowledge Graphs for Customer Service Question Answering| SIGIR                                                                                       | 2024 |  Retrieval Augmented Generation    | [Link](https://dl.acm.org/doi/10.1145/3626772.3661370)
-| 15 | GRAG: Graph Retrieval-Augmented Generation| arXiv                                                                                         | 2024 |  Retrieval Augmented Generation    | [Link](https://arxiv.org/abs/2405.16506) 
+| 15 | Retrieval-enhanced Knowledge Editing in Language Models for Multi-Hop Question Answering | CIKM                                                                                         | 2024 |  Retrieval Augmented Generation    | [Link](https://dl.acm.org/doi/abs/10.1145/3627673.3679722) 
 
 
 ### KGs as Reasoning Guideline
@@ -55,7 +55,7 @@
 | 11 | ODA: Observation-Driven Agent for integrating LLMs and Knowledge Graphs   | ACL Findings                                                                                           | 2024 |  Agent-based KG Guildlines    | [Link](https://aclanthology.org/2024.findings-acl.442/)                                                         |
 
 
-### KG as Refiner and Filter
+### KGs as Refiner and Filter
 
 | NO | Title                                                                                                        | Venue                                                                                                                                                    | Year | Category                                       |Paper Link                                                                                           |
 |----|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|------|------------------------------------------------|------------------------------------------------------------------------------------------------|
@@ -126,13 +126,15 @@
 | NO | Title                                                                                                        | Venue                                                                                                                                                    | Year |          Github            | Category                    | Paper Link                                                                                           |
 |----|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|------|------------------------------------------------|------------------------------------------------|------------------------------------------------------------------------------------------------|
 | 1 | KAG: Boosting LLMs in Professional Domains via Knowledge Augmented Generation  | arXiv   | 2024 | [KAG](https://github.com/OpenSPG/KAG)|  LLM and KGs for QA| [Link](https://arxiv.org/abs/2409.13731)
-| 3 | From Local to Global: A Graph RAG Approach to Query-Focused Summarization  | arXiv  | 2024 | [GraphRAG](https://github.com/microsoft/graphrag)|  LLM and KGs for QA| [Link](https://arxiv.org/abs/2404.16130)
-| 2 | LightRAG: Simple and Fast Retrieval-Augmented Generatio  | arXiv   | 2024 | [LightRAG](https://github.com/HKUDS/LightRAG)|  LLM and KGs for QA| [Link](https://arxiv.org/abs/2410.05779)
+| 2 | From Local to Global: A Graph RAG Approach to Query-Focused Summarization  | arXiv  | 2024 | [GraphRAG](https://github.com/microsoft/graphrag)|  LLM and KGs for QA| [Link](https://arxiv.org/abs/2404.16130)
+| 3 | LightRAG: Simple and Fast Retrieval-Augmented Generatio  | arXiv   | 2024 | [LightRAG](https://github.com/HKUDS/LightRAG)|  LLM and KGs for QA| [Link](https://arxiv.org/abs/2410.05779)
+| 4 | Fact Finder -- Enhancing Domain Expertise of Large Language Models by Incorporating Knowledge Graphs  | arXiv   | 2024 | [Fact Finder](https://github.com/chrschy/fact-finder/)|  LLM and KGs for QA| [Link](https://arxiv.org/abs/2408.03010)
 
 
 ### Demo
 
 | NO | Name |  Description |Source |Github   | 
 |----|------|----------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|------|
-| 1 | GraphRAG-QA  | An industrial demo of GraphRAG integrating several query engine for augmenting QA, NLP2Cypher-based KG query engine, vector RAG query engine, and Graph vector RAG query engine.  |Nebula Graph| [GraphRAG-QA](https://github.com/wey-gu/demo-kg-build)
+| 1 | GraphRAG-QA  | An industrial demo of GraphRAG integrating several query engine for augmenting QA, NLP2Cypher-based KG query engine, vector RAG query engine, and Graph vector RAG query engine.  |NebulaGraph| [GraphRAG-QA](https://github.com/wey-gu/demo-kg-build)
 | 2 | Neo4jRAG-QA  | This sample application demonstrates how to implement a Large Language Model (LLM) and Retrieval Augmented Generation (RAG) system with a Neo4j Graph Database.  | Neo4j Graph | [Neo4jRAG-QA](https://github.com/neo4j-examples/rag-demo)
+| 3 | BioGraphRAG  | This a platform to integrate biomedical knowledge graphs stored in NebulaGraph with LLMs via GraphRAG architecture.  | NebulaGraph | [Neo4jRAG-QA](https://github.com/devingupta1/BioGraphRAG)
