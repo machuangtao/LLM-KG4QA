@@ -22,7 +22,7 @@
 ### KGs as Background Knowledge
 | NO | Title                                                                                                        | Venue                                                                                                                                                    | Year | Category                                       |Paper Link                                                                                           |
 |----|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|------|------------------------------------------------|------------------------------------------------------------------------------------------------|
-| 1 | Deep Bidirectional Language-Knowledge Graph pretraining   | NeurIPS | 2022|  Knowledge Integration and Fusion    | [Link](https://proceedings.neurips.cc/paper_files/paper/2022/file/f224f056694bcfe465c5d84579785761-Paper-Conference.pdf)                                            |
+| 1 | Deep Bidirectional Language-Knowledge Graph pretraining   | NeurIPS | 2022|  Knowledge Integration and Fusion    | [Link](https://proceedings.neurips.cc/paper_files/paper/2022/file/f224f056694bcfe465c5d84579785761-Paper-Conference.pdf)                             
 | 2 | GreaseLM: Graph REASoning Enhanced Language Models    | ICLR    | 2022 |  Knowledge Integration and Fusion    | [Link](https://openreview.net/forum?id=41e9o6cQPj) 
 | 3 | InfuserKI: Enhancing Large Language Models with Knowledge Graphs via Infuser-Guided Knowledge Integration  | LLM+KG@VLDB   | 2024 |  Knowledge Integration and Fusion    | [Link](https://arxiv.org/abs/2402.11441)
 | 4 | KnowLA: Enhancing Parameter-efficient Finetuning with Knowledgeable Adaptation  | NAACL   | 2024 |  Knowledge Integration and Fusion    | [Link](https://aclanthology.org/2024.naacl-long.396/)
@@ -158,12 +158,12 @@
 | 7 | XplainLLM: A Knowledge-Augmented Dataset for Reliable Grounded Explanations in LLMs  | EMNLP  | 2024 | [XplainLLM](https://github.com/chen-zichen/XplainLLM_dataset) |  LLM and KGs for QA| [Link](https://arxiv.org/abs/2311.08614)
 | 8 | Developing a Scalable Benchmark for Assessing Large Language Models in Knowledge Graph Engineering  | SEMANTICS   | 2023 | [LLM-KG-Bench](https://github.com/AKSW/LLM-KG-Bench)|  LLM and KGs for QA| [Link](https://ceur-ws.org/Vol-3526/paper-04.pdf)
 | 9 | Docugami Knowledge Graph Retrieval Augmented Generation (KG-RAG) Datasets | -  | 2023 | [KG-RAG](https://github.com/docugami/KG-RAG-datasets)|  LLM and KGs for QA| -
-| 10 | How Credible Is an Answer From Retrieval-Augmented LLMs? Investigation and Evaluation With Multi-Hop QA  | ACL ARR   | 2024 |- |  LLM and KGs for QA| [Link]((https://openreview.net/forum?id=YsmnPHBbx1f))
+| 10 | How Credible Is an Answer From Retrieval-Augmented LLMs? Investigation and Evaluation With Multi-Hop QA  | ACL ARR   | 2024 |- |  LLM and KGs for QA| [Link](https://openreview.net/forum?id=YsmnPHBbx1f)
 | 11 | MINTQA: A Multi-Hop Question Answering Benchmark for Evaluating LLMs on New and Tail Knowledge | arXiv  | 2024 | [MINTQA](https://github.com/probe2/multi-hop/)|  LLM and KGs for QA| [Link](https://arxiv.org/abs/2412.17032)
 | 12 | SituatedQA: Incorporating Extra-Linguistic Contexts into QA | EMNLP  | 2024 | [SituatedQA](https://github.com/mikejqzhang/SituatedQA)|  Open-retrieval QA | [Link](https://aclanthology.org/2021.emnlp-main.586/)
 | 13 | PAT-Questions: A Self-Updating Benchmark for Present-Anchored Temporal Question-Answering | ACL Findings  | 2024 | [PAQA](https://github.com/jannatmeem95/PAT-Questions)|  Temporal QA| [Link](https://aclanthology.org/2024.findings-acl.777/)
-| 14 | BioASQ-QA: A manually curated corpus for Biomedical Question Answering | Scientific Data  | 2023 | [BioASQ-QA](https://zenodo.org/records/7655130)|  KBQA and KGQA | [Link]([https://arxiv.org/abs/2412.17032](https://www.nature.com/articles/s41597-023-02068-4))
-| 15 | MiniRAG: Towards Extremely Simple Retrieval-Augmented Generation | arXiv  | 2025 | [LiHua-World](https://github.com/HKUDS/MiniRAG/tree/main/dataset/LiHua-World))|  LLM and KGs for QA| [Link](https://arxiv.org/abs/2501.06713)
+| 14 | BioASQ-QA: A manually curated corpus for Biomedical Question Answering | Scientific Data  | 2023 | [BioASQ-QA](https://zenodo.org/records/7655130)|  KBQA and KGQA | [Link](https://www.nature.com/articles/s41597-023-02068-4)
+| 15 | MiniRAG: Towards Extremely Simple Retrieval-Augmented Generation | arXiv  | 2025 | [LiHua-World](https://github.com/HKUDS/MiniRAG/tree/main/dataset/LiHua-World)|  LLM and KGs for QA| [Link](https://arxiv.org/abs/2501.06713)
 
 ### Industrial Applications
 
