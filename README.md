@@ -196,9 +196,9 @@
 | 15 | Text2Cypher - Natural Language Queries  |  Blog  | 2023 |  NL2GQL    | [Link](https://neo4j.com/labs/neodash/2.4/user-guide/extensions/natural-language-queries/)
 | 16 | LLaSA: Large Language and Structured Data Assistant   | arXiv | 2024 | Structured Data Assistant | [Link](https://arxiv.org/abs/2411.14460)     
 | 17 | GraphRAG and role of Graph Databases in Advancing AI   | IJRCAIT | 2024 | Graph DB | [Link](https://doi.org/10.5281/zenodo.13908615) 
-| 17 | TigerVector: Supporting Vector Search in Graph Databases for Advanced RAGs | arXiv | 2025 | Graph DB | [Link](https://arxiv.org/abs/2501.11216) 
-| 17 | Increasing Accuracy of LLM-powered Question Answering on SQL databases: Knowledge Graphs to the Rescue  | Data Engineering Bulletin | 2024 | RDB QA | [Link](http://sites.computer.org/debull/A24dec/p109.pdf)  
-| 17 | Symphony: Towards Trustworthy Question Answering and Verification using RAG over Multimodal Data Lakes  | Data Engineering Bulletin | 2024 | RDB QA | [Link](http://sites.computer.org/debull/A24dec/p135.pdf)           
+| 18 | TigerVector: Supporting Vector Search in Graph Databases for Advanced RAGs | arXiv | 2025 | Graph DB | [Link](https://arxiv.org/abs/2501.11216) 
+| 19 | Increasing Accuracy of LLM-powered Question Answering on SQL databases: Knowledge Graphs to the Rescue  | Data Engineering Bulletin | 2024 | RDB QA | [Link](http://sites.computer.org/debull/A24dec/p109.pdf)  
+| 20 | Symphony: Towards Trustworthy Question Answering and Verification using RAG over Multimodal Data Lakes  | Data Engineering Bulletin | 2024 | RDB QA | [Link](http://sites.computer.org/debull/A24dec/p135.pdf)           
 
 ## 4. Benchmark and Applications
 
