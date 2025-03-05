@@ -1,9 +1,9 @@
 # LLM-KG4QA: Large Language Models and Knowledge Graphs for Question Answering
-<!--- 
+- 
 ## 🔔 News
-- **`2025-02`** Our tutorial was accepted to be presented at **EDBT/ICDT 2025 Joint Conference.**
-- **`2024-12`** We create this repository to maintain a paper list on **`Large Language Models and Knowledge Graphs for Question Answering`.**
--->
+- **`2025-02`** Our [tutorial](https://machuangtao.github.io/LLM-KG4QA/tutorial) was accepted to be presented at **EDBT/ICDT 2025 joint conference.**
+- **`2024-12`** We create this repository to maintain a paper list on **Large Language Models and Knowledge Graphs for Question Answering.**
+
 ## Content
 - [LLM and KGs for QA](#1-llms-and-kgs-for-qa)
   - [KGs as Background Knowledge](#kgs-as-background-knowledge)

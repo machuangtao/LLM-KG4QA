@@ -18,6 +18,8 @@ Large language models (LLMs) have demonstrated remarkable performance on several
 
 This tutorial aims to furnish an overview of the state-of-the-art advances in unifying LLMs with KGs for QA, by categorizing them into three groups according to the roles of KGs when unifying with LLMs The metrics and benchmarking datasets for evaluating the methods of LLMs+KGs for QA are presented, and domain-specific industry applications and demonstrations will be showcased. The open challenges are summarized and the opportunities for data management are highlighted.
 
+## Speakers
+
 ### [Chuangtao Ma](https://machuangtao.github.io)
 
 <img src="/images/CTMA.jpg" alt="Chuangtao Ma" width="200" height="200">
