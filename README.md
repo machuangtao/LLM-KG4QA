@@ -29,6 +29,7 @@
 
 ### KGs as Background Knowledge
 #### Pre-training and Fine-tuning
+
 | NO | Title                                                                                                        | Venue                                                                                                                                                    | Year | Category                                       |Paper Link                                                                                           |
 |----|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|------|------------------------------------------------|------------------------------------------------------------------------------------------------|
 | 1 | Deep Bidirectional Language-Knowledge Graph pretraining   | NeurIPS | 2022|  Pre-training    | [Link](https://proceedings.neurips.cc/paper_files/paper/2022/file/f224f056694bcfe465c5d84579785761-Paper-Conference.pdf)                             
