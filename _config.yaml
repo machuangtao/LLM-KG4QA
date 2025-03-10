@@ -4,4 +4,6 @@ theme: minima
 show_excerpts: true
 header_pages:
   - tutorial-edbt25/index.md
+exclude:
+  - README.md
 description: "Unifying LLMs and KGs for QA: Recent Advances and Opportunities"
