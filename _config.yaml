@@ -1,5 +1,4 @@
 title: "Unifying LLMs and KGs for QA: Recent Advances and Opportunities"
-title: false
 author: " Chuangtao Ma, Yongrui Chen, Tianxing Wu, Arijit Khan, Haofen Wang"
 theme: minima
 show_excerpts: True
@@ -8,4 +7,6 @@ header_pages:
 exclude:
   - README.md
 description: "Unifying LLMs and KGs for QA: Recent Advances and Opportunities"
+url: "https://machuangtao.github.io/LLM-KG4QA/tutorial-edbt25"
+baseurl: "/"
                 
