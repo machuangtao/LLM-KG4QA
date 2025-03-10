@@ -1,4 +1,7 @@
 title: "Unifying LLMs and KGs for QA: Recent Advances and Opportunities"
 author: " Chuangtao Ma, Yongrui Chen, Tianxing Wu, Arijit Khan, Haofen Wang"
 theme: minima
-show_excerpts: false
+show_excerpts: true
+header_pages:
+  - tutorial-edbt25/index.md
+description: "Unifying LLMs and KGs for QA: Recent Advances and Opportunities"
