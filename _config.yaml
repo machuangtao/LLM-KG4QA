@@ -6,7 +6,6 @@ header_pages:
   - tutorial-edbt25/index.md
 exclude:
   - README.md
-description: "Unifying LLMs and KGs for QA: Recent Advances and Opportunities"
-url: "https://machuangtao.github.io/LLM-KG4QA/tutorial-edbt25"
-baseurl: "/"
+description: "This tutorial aims to furnish an overview of the state-of-the-art advances in unifying LLMs with KGs for QA, by categorizing them into three groups according to the roles of KGs when unifying with LLMs The metrics and benchmarking datasets for evaluating the methods of LLMs+KGs for QA are presented, and domain-specific industry applications and demonstrations will be showcased. The open challenges are summarized and the opportunities for data management are highlighted."
+blank_site_title: true
                 
