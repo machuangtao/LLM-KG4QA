@@ -7,6 +7,5 @@ header_pages:
 exclude:
   - README.md
 description: "Unifying LLMs and KGs for QA: Recent Advances and Opportunities"
-url: "https://machuangtao.github.io"  
-baseurl: "/LLM-KG4QA/tutorial-edbt25"
+url: "https://machuangtao.github.io/LLM-KG4QA/tutorial-edbt25"  
 permalink: /:title/                
