@@ -2,17 +2,18 @@
 layout: home
 ---
 
-Welcome to our EDBT 2025 tutorial: LLM-KG4QA!
+Welcome to our EDBT 2025 tutorial!
+
+## Tutorial: Unifying Large Language Models and Knowledge Graphs for Question Answering: Recent Advances and Opportunities
 
 ## Overview
-
 
 - **Speakers:** [Chuangtao Ma](https://machuangtao.github.io/), [Yongrui Chen](https://bahuia.github.io), [Tianxing Wu](https://tianxing-wu.github.io), [Arijit Khan](https://homes.cs.aau.dk/~Arijit), [Haofen Wang](https://tongji-kgllm.github.io/people/wang-haofen) 
 - **Venue:** [EDBT 2025 Tutorials](https://edbticdt2025.upc.edu/?contents=accepted-papers-tutorials.html)
 - **Date and Time:** Thursday, March 27, 2025 10:30am-12:30pm
-- **Location:** Universitat Politècnica de Catalunya, Barcelona, Spain, Room: TBA
+- **Location:** Room: TBA, Universitat Politècnica de Catalunya, Barcelona, Spain 
 
-## Tutorial: Unifying Large Language Models and Knowledge Graphs for Question Answering: Recent Advances and Opportunities
+## Abstract
 
 Large language models (LLMs) have demonstrated remarkable performance on several question-answering (QA) tasks because of their superior capabilities in natural language understanding and generation. On the other hand, due to poor reasoning capacity, outdated or lack of domain knowledge, expensive retraining costs, and limited context lengths of LLMs, LLM-based QA methods struggle with complex QA tasks such as multi-hop QAs and long-context QAs. Knowledge graphs (KGs) store graphbased structured knowledge which are effective for reasoning and interpretability since KGs accumulate and convey explicit relationships-based factual and domain-specific knowledge from the real world. To address the challenges and limitations of LLMbased QA, several research works that unify LLMs+KGs for QA have been proposed recently.
 
@@ -73,4 +74,5 @@ Haofen Wang is a Professor at Tongji University, China. He is one of the initiat
 
 ## Materials and Slides
 - **Materials**: The covered papers, pointers to opensource codebase, datasets, and demonstrations are available on [GitHub](https://github.com/machuangtao/LLM-KG4QA) for public access.
+- **Tutorial Paper**: The tutorial paper is available on [OpenProceedings](https://openproceedings.org/2025/conf/edbt/paper-T4.pdf).
 - **Slides**: to be updated.
