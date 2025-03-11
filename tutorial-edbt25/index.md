@@ -69,7 +69,7 @@ Haofen Wang is a Professor at Tongji University, China. He is one of the initiat
 | 11:45 - 12:05 PM | Evaluations and Applications | Tianxing Wu |
 | 12:05 - 12:15 PM | Opportunities for Data Management | Arijit Khan |
 | 12:15 - 12:20 PM | Future Directions | Tianxing Wu |
-| 12:20 - 12:30 PM | Q&A Section | |
+| 12:20 - 12:30 PM | Q&A Session | |
 
 
 ## Materials and Slides
