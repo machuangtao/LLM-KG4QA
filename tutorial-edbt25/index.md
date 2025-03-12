@@ -1,7 +1,7 @@
 ---
 layout: page
 description: "EDBT 2025 tutorial on integrating LLMs with Knowledge Graphs for QA."
-image: ./images/edbt25.jpg 
+image: /images/edbt25.jpg 
 ---
 
 Welcome to our EDBT 2025 tutorial!

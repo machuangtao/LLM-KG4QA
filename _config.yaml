@@ -8,4 +8,4 @@ exclude:
   - README.md
 description: "EDBT25 LLM-KG4QA Tutorial"
 social:
-  image: ./images/edbt25.jpg
+  image: images/edbt25.jpg
