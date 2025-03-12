@@ -1,11 +1,11 @@
 ---
 layout: page
-og_image: /images/edbt25.png   
+og_image: ./images/edbt25.jpg   
 ---
 
 Welcome to our EDBT 2025 tutorial!
 <p align="center">
-    <img src="/images/edbt25.png" alt="EDBT2025" width="600" height="200">
+    <img src="/images/edbt25.jpg" alt="EDBT2025" width="600" height="200">
 </p>
 
 ## Tutorial: Unifying Large Language Models and Knowledge Graphs for Question Answering: Recent Advances and Opportunities
