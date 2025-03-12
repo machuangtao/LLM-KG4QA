@@ -2,9 +2,10 @@ title: null
 name: "Unifying LLMs and KGs for QA: Recent Advances and Opportunities"
 author: " Chuangtao Ma, Yongrui Chen, Tianxing Wu, Arijit Khan, Haofen Wang"
 theme: minima
-show_excerpts: True
 header_pages:
   - tutorial-edbt25/index.md
 exclude:
   - README.md
-description: "EDBT25 LLM-KG4QA Tutorial | The webpage is maintained by Chuangtao."             
+description: "EDBT25 LLM-KG4QA Tutorial"
+social:
+  image: /images/edbt25.jpg
