@@ -1,5 +1,6 @@
 ---
-layout: home
+layout: page
+og_image: /images/edbt25.png   
 ---
 
 Welcome to our EDBT 2025 tutorial!

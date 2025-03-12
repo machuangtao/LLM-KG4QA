@@ -7,4 +7,4 @@ header_pages:
   - tutorial-edbt25/index.md
 exclude:
   - README.md
-description: "The webpage is maintained by Chuangtao."                
+description: "EDBT25 LLM-KG4QA Tutorial | The webpage is maintained by Chuangtao."             
