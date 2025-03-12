@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Unifying Large Language Models and Knowledge Graphs for Question Answering: Recent Advances and Opportunities"
+title: "Unifying LLMs and KGs for QA: Recent Advances and Opportunities"
 description: "EDBT 2025 tutorial on integrating LLMs with Knowledge Graphs for QA."
 image: /images/edbt25.jpg 
 ---
