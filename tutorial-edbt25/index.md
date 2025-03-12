@@ -4,6 +4,8 @@ layout: home
 
 Welcome to our EDBT 2025 tutorial!
 
+<img src="/images/edbt25.png" alt="EDBT2025" width="600" height="200">
+
 ## Tutorial: Unifying Large Language Models and Knowledge Graphs for Question Answering: Recent Advances and Opportunities
 
 ## Overview
@@ -17,7 +19,7 @@ Welcome to our EDBT 2025 tutorial!
 
 Large language models (LLMs) have demonstrated remarkable performance on several question-answering (QA) tasks because of their superior capabilities in natural language understanding and generation. On the other hand, due to poor reasoning capacity, outdated or lack of domain knowledge, expensive retraining costs, and limited context lengths of LLMs, LLM-based QA methods struggle with complex QA tasks such as multi-hop QAs and long-context QAs. Knowledge graphs (KGs) store graphbased structured knowledge which are effective for reasoning and interpretability since KGs accumulate and convey explicit relationships-based factual and domain-specific knowledge from the real world. To address the challenges and limitations of LLMbased QA, several research works that unify LLMs+KGs for QA have been proposed recently.
 
-This tutorial aims to furnish an overview of the state-of-the-art advances in unifying LLMs with KGs for QA, by categorizing them into three groups according to the roles of KGs when unifying with LLMs The metrics and benchmarking datasets for evaluating the methods of LLMs+KGs for QA are presented, and domain-specific industry applications and demonstrations will be showcased. The open challenges are summarized and the opportunities for data management are highlighted.
+This tutorial aims to furnish an overview of the state-of-the-art advances in unifying LLMs with KGs for QA, by categorizing them into three groups according to the roles of KGs when unifying with LLMs. The metrics and benchmarking datasets for evaluating the methods of LLMs+KGs for QA are presented, and domain-specific industry applications and demonstrations will be showcased. The open challenges are summarized and the opportunities for data management are highlighted.
 
 ## Speakers
 
@@ -65,7 +67,7 @@ Haofen Wang is a Professor at Tongji University, China. He is one of the initiat
 | 10:30 - 10:45 AM | Motivation and Introduction | Arijit Khan |
 | 10:45 - 11:10 AM | Unifying LLMs with KGs for QA | Chuangtao Ma |
 | 11:10 - 11:35 AM | Advanced Topics on LLM+KG for QA | Yongrui Chen |
-| 11:35 - 11:45 AM | Coffee Break | |
+| 11:35 - 11:45 AM | Break | |
 | 11:45 - 12:05 PM | Evaluations and Applications | Tianxing Wu |
 | 12:05 - 12:15 PM | Opportunities for Data Management | Arijit Khan |
 | 12:15 - 12:20 PM | Future Directions | Tianxing Wu |
