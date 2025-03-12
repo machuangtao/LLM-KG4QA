@@ -13,7 +13,7 @@
 - [Complex QA](#2-complex-qa)
   - [Explainable QA](#explainable-qa)
   - [Multi-modal QA](#multi-modal-qa)
-  - [Multi-docuemnt QA](#multi-document-qa)
+  - [Multi-document QA](#multi-document-qa)
   - [Multi-Hop QA](#multi-hop-qa)
   - [Multi-run and Conversational QA](#multi-run-and-conversational-qa)
 - [Advanced Topics](#3-advanced-topics)
