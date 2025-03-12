@@ -3,8 +3,9 @@ layout: home
 ---
 
 Welcome to our EDBT 2025 tutorial!
-
-<img src="/images/edbt25.png" alt="EDBT2025" width="600" height="200">
+<p align="center">
+    <img src="/images/edbt25.png" alt="EDBT2025" width="600" height="200">
+</p>
 
 ## Tutorial: Unifying Large Language Models and Knowledge Graphs for Question Answering: Recent Advances and Opportunities
 
