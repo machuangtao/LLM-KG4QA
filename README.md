@@ -1,8 +1,8 @@
 # LLM-KG4QA: Large Language Models and Knowledge Graphs for Question Answering
 
-## 🔔 News
+<!-- ## 🔔 News
 - **`2025-02`** Our [tutorial](https://machuangtao.github.io/LLM-KG4QA/tutorial-edbt25) was accepted to be presented at **EDBT/ICDT 2025 joint conference.**
-- **`2024-12`** We create this repository to maintain a paper list on **Large Language Models and Knowledge Graphs for Question Answering.**
+- **`2024-12`** We create this repository to maintain a paper list on **Large Language Models and Knowledge Graphs for Question Answering.** -->
 
 ## Content
 - [LLM and KGs for QA](#1-llms-and-kgs-for-qa)
@@ -62,16 +62,18 @@
 | 11 | MiniRAG: Towards Extremely Simple Retrieval-Augmented Generation | arXiv  | 2025 | Graph RAG | [Link](https://arxiv.org/abs/2501.06713)
 | 12 | GFM-RAG: Graph Foundation Model for Retrieval Augmented Generation | arXiv  | 2025 | Graph RAG | [Link](https://arxiv.org/abs/2502.01113)
 | 13 | MSG-LLM: A Multi-scale Interactive Framework for Graph-enhanced Large Language Models | COLING  | 2025 | Graph RAG | [Link](https://aclanthology.org/2025.coling-main.648/)
-| 14 | KG-RAG: Bridging the Gap Between Knowledge and Creativity | arXiv   | 2024 |  KG RAG   | [Link](https://arxiv.org/abs/2405.12035)
-| 15 | Retrieval-Augmented Generation with Knowledge Graphs for Customer Service Question Answering| SIGIR         | 2024 | KG RAG    | [Link](https://dl.acm.org/doi/10.1145/3626772.3661370)
-| 16 | REnhancing Large Language Models with Knowledge Graphs for Robust Question Answering | ICPADS   | 2024 |  KG RAG    | [Link](https://doi.ieeecomputersociety.org/10.1109/ICPADS63350.2024.00042) 
-| 17 | FRAG: A Flexible Modular Framework for Retrieval-Augmented Generation based on Knowledge Graphs | arXiv   | 2025 |  KG RAG    | [Link](https://arxiv.org/abs/2501.09957) 
-| 18 | SimGRAG: Leveraging Similar Subgraphs for Knowledge Graphs Driven Retrieval-Augmented Generation | arXiv   | 2025 |  KG RAG    | [Link](https://arxiv.org/abs/2412.15272) 
-| 19 | RGR-KBQA: Generating Logical Forms for Question Answering Using Knowledge-Graph-Enhanced Large Language Model | COLING   | 2025 |  KG RAG    | [Link](https://aclanthology.org/2025.coling-main.205) 
-| 20 | Knowledge Graph-Guided Retrieval Augmented Generation | arXiv   | 2025 |  KG RAG    | [Link](https://arxiv.org/abs/2502.06864) 
-| 21 | Empowering LLMs by hybrid retrieval-augmented generation for domain-centric Q&A in smart manufacturing | Advanced Engineering Informatics | 2025| Hybrid RAG  | [Link](https://doi.org/10.1016/j.aei.2025.103212) 
-| 22 | Simple Is Effective: The Roles of Graphs and Large Language Models in Knowledge-Graph-Based Retrieval-Augmented Generation | ICLR|2025| Subgraph RAG  | [Link](https://openreview.net/forum?id=JvkuZZ04O7) 
-| 23 | Spatial-RAG: Spatial Retrieval Augmented Generation for Real-World Spatial Reasoning Questions | arXiv | 2025 | Spatial RAG  | [Link](https://arxiv.org/abs/2502.18470) 
+| 14 | PathRAG: Pruning Graph-based Retrieval Augmented Generation with Relational Paths | arXiv  | 2025 | Graph RAG | [Link](https://arxiv.org/abs/2502.14902/)
+| 15 | In-depth Analysis of Graph-based RAG in a Unified Framework | arXiv  | 2025 | Graph RAG | [Link](https://www.arxiv.org/abs/2503.04338/)
+| 16 | KG-RAG: Bridging the Gap Between Knowledge and Creativity | arXiv   | 2024 |  KG RAG   | [Link](https://arxiv.org/abs/2405.12035)
+| 17 | Retrieval-Augmented Generation with Knowledge Graphs for Customer Service Question Answering| SIGIR         | 2024 | KG RAG    | [Link](https://dl.acm.org/doi/10.1145/3626772.3661370)
+| 18 | REnhancing Large Language Models with Knowledge Graphs for Robust Question Answering | ICPADS   | 2024 |  KG RAG    | [Link](https://doi.ieeecomputersociety.org/10.1109/ICPADS63350.2024.00042) 
+| 19 | FRAG: A Flexible Modular Framework for Retrieval-Augmented Generation based on Knowledge Graphs | arXiv   | 2025 |  KG RAG    | [Link](https://arxiv.org/abs/2501.09957) 
+| 20 | SimGRAG: Leveraging Similar Subgraphs for Knowledge Graphs Driven Retrieval-Augmented Generation | arXiv   | 2025 |  KG RAG    | [Link](https://arxiv.org/abs/2412.15272) 
+| 21 | RGR-KBQA: Generating Logical Forms for Question Answering Using Knowledge-Graph-Enhanced Large Language Model | COLING   | 2025 |  KG RAG    | [Link](https://aclanthology.org/2025.coling-main.205) 
+| 22 | Knowledge Graph-Guided Retrieval Augmented Generation | arXiv   | 2025 |  KG RAG    | [Link](https://arxiv.org/abs/2502.06864) 
+| 23 | Simple Is Effective: The Roles of Graphs and Large Language Models in Knowledge-Graph-Based Retrieval-Augmented Generation | ICLR | 2025 | KG RAG  | [Link](https://openreview.net/forum?id=JvkuZZ04O7) 
+| 43 | Empowering LLMs by hybrid retrieval-augmented generation for domain-centric Q&A in smart manufacturing | Advanced Engineering Informatics | 2025| Hybrid RAG  | [Link](https://doi.org/10.1016/j.aei.2025.103212) 
+| 25 | Spatial-RAG: Spatial Retrieval Augmented Generation for Real-World Spatial Reasoning Questions | arXiv | 2025 | Spatial RAG  | [Link](https://arxiv.org/abs/2502.18470) 
 
 ### KGs as Reasoning Guideline
 
@@ -183,7 +185,7 @@
 | 15 | LEGO-GraphRAG: Modularizing Graph-based Retrieval-Augmented Generation for Design Space Exploration   | arXiv  | 2024 | Path-based optimization   | [Link](https://arxiv.org/abs/2411.05844)
 | 16 | Query Optimization for Parametric Knowledge Refinement in Retrieval-Augmented Large Language Models   | arXiv    | 2024 | Query-based optimization   | [Link](https://arxiv.org/abs/2411.07820)
 | 17 | A MapReduce Approach to Effectively Utilize Long Context Information in Retrieval Augmented Language Models   | arXiv    | 2024 | MapReduce-based optimization   | [Link](https://arxiv.org/abs/2412.15271)
-
+| 18 | PIP-KAG: Mitigating Knowledge Conflicts in Knowledge-Augmented Generation via Parametric Pruning   | arXiv    | 2025 | Knowledge conflicts mitigation   | [Link](https://arxiv.org/abs/2502.15543)
 
 
 ### Data Management
@@ -209,7 +211,8 @@
 | 17 | GraphRAG and role of Graph Databases in Advancing AI   | IJRCAIT | 2024 | Graph DB | [Link](https://doi.org/10.5281/zenodo.13908615) 
 | 18 | TigerVector: Supporting Vector Search in Graph Databases for Advanced RAGs | arXiv | 2025 | Graph DB | [Link](https://arxiv.org/abs/2501.11216) 
 | 19 | Increasing Accuracy of LLM-powered Question Answering on SQL databases: Knowledge Graphs to the Rescue  | Data Engineering Bulletin | 2024 | RDB QA | [Link](http://sites.computer.org/debull/A24dec/p109.pdf)  
-| 20 | Symphony: Towards Trustworthy Question Answering and Verification using RAG over Multimodal Data Lakes  | Data Engineering Bulletin | 2024 | RDB QA | [Link](http://sites.computer.org/debull/A24dec/p135.pdf)    
+| 20 | Symphony: Towards Trustworthy Question Answering and Verification using RAG over Multimodal Data Lakes  | Data Engineering Bulletin | 2024 | RDB QA | [Link](http://sites.computer.org/debull/A24dec/p135.pdf)  
+| 21 | Increasing the LLM Accuracy for Question Answering: Ontologies to the Rescue!  | arXiv | 2024 | RDB QA | [Link](https://arxiv.org/abs/2405.11706)    
 
 
 ## 4. Benchmark and Applications
