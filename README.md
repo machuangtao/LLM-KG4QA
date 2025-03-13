@@ -1,5 +1,7 @@
 # LLM-KG4QA: Large Language Models and Knowledge Graphs for Question Answering
 
+[![CC BY 4.0][cc-by-shield]][cc-by] [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![](https://img.shields.io/github/last-commit/machuangtao/LLM-KG4QA?color=blue) ![Stars](https://img.shields.io/github/stars/machuangtao/LLM-KG4QA?color=blue)  ![Forks](https://img.shields.io/github/forks/machuangtao/LLM-KG4QA?color=blue&label=Fork)
+
 <!-- ## 🔔 News
 - **`2025-02`** Our [tutorial](https://machuangtao.github.io/LLM-KG4QA/tutorial-edbt25) was accepted to be presented at **EDBT/ICDT 2025 joint conference.**
 - **`2024-12`** We create this repository to maintain a paper list on **Large Language Models and Knowledge Graphs for Question Answering.** -->
@@ -249,7 +251,7 @@
 | 26 | How Credible Is an Answer From Retrieval-Augmented LLMs? Investigation and Evaluation With Multi-Hop QA  | ACL ARR   | 2024 |- |  LLM and KGs for QA| [Link](https://openreview.net/forum?id=YsmnPHBbx1f)
 | 27 | Can Knowledge Graphs Make Large Language Models More Trustworthy? An Empirical Study over Open-ended Question Answering  | arXiv  | 2024 |[OKGQA](https://anonymous.4open.science/r/OKGQA-CBB0) |  LLM and KGs for QA| [Link](https://arxiv.org/abs/2410.08085)
 | 28 | MiniRAG: Towards Extremely Simple Retrieval-Augmented Generation | arXiv  | 2025 | [LiHua-World](https://github.com/HKUDS/MiniRAG/tree/main/dataset/LiHua-World)|  LLM and KGs for QA| [Link](https://arxiv.org/abs/2501.06713)
-| 29 | Can Knowledge Graphs Make Large Language Models More Trustworthy? An Empirical Study Over Open-ended Question Answering   | arXiv | 2025 | [OKGQA](https://anonymous.4open.science/r/OKGQA-CBB0) | [Link](https://arxiv.org/abs/2410.08085)
+| 29 | Can Knowledge Graphs Make Large Language Models More Trustworthy? An Empirical Study Over Open-ended Question Answering   | arXiv | 2025 | [OKGQA](https://anonymous.4open.science/r/OKGQA-CBB0) | LLM and KGs for QA| [Link](https://arxiv.org/abs/2410.08085)
 
 ### Industrial and Scientific Applications
 
