@@ -270,7 +270,7 @@
 | 6 |Knowledge Graphs as a source of trust for LLM-powered enterprise question answering  | Journal of Web Semantics  | 2025 | - |  LLM and KGs for QA| [Link](https://doi.org/10.1016/j.websem.2024.100858)
 | 7 |MedRAG: Enhancing Retrieval-augmented Generation with Knowledge Graph-Elicited Reasoning for Healthcare Copilot |WWW| 2025 | [MedRAG](https://github.com/SNOWTEAM2023/MedRAG)|  LLM and KGs for QA| [Link](https://openreview.net/pdf/7d3d9ad2d616ceae8c5b77eb94019086b980ceda.pdf)
 | 8 |EICopilot: Search and Explore Enterprise Information over Large-scale Knowledge Graphs with LLM-driven Agents |arXiv| 2025 | - | LLM and KGs for QA| [Link](https://arxiv.org/abs/2501.13746)
-| 9 |Nanjing Yunjin intelligent question-answering system based on knowledge graphs and retrieval augmented generation technology |Heritage Science| 2025 | - | LLM and KGs for QA| [Link](https://www.nature.com/articles/s40494-024-01231-3)
+| 9 |Nanjing Yunjin intelligent question-answering system based on knowledge graphs and retrieval augmented generation technology |Heritage Science| 2024 | - | LLM and KGs for QA| [Link](https://www.nature.com/articles/s40494-024-01231-3)
 
 ### Demo
 
