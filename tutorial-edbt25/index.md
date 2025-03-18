@@ -16,7 +16,7 @@ Welcome to our EDBT 2025 tutorial!
 - **Speakers:** [Chuangtao Ma](https://machuangtao.github.io/), [Yongrui Chen](https://bahuia.github.io), [Tianxing Wu](https://tianxing-wu.github.io), [Arijit Khan](https://homes.cs.aau.dk/~Arijit), [Haofen Wang](https://tongji-kgllm.github.io/people/wang-haofen) 
 - **Venue:** [EDBT 2025 Tutorials](https://edbticdt2025.upc.edu/?contents=accepted-papers-tutorials.html)
 - **Date and Time:** Thursday, March 27, 2025 10:30am-12:30pm
-- **Location:** Room: TBA, Universitat Politècnica de Catalunya, Barcelona, Spain 
+- **Location:** Room: **B4002**, UPC Campus Nord, Barcelona, Spain 
 
 ## Abstract
 
