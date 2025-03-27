@@ -80,4 +80,4 @@ Haofen Wang is a Professor at Tongji University, China. He is one of the initiat
 ## Materials and Slides
 - **Materials**: The covered papers, pointers to opensource codebase, datasets, and demonstrations are available on [GitHub](https://github.com/machuangtao/LLM-KG4QA) for public access.
 - **Tutorial Paper**: The tutorial paper is available on [OpenProceedings](https://openproceedings.org/2025/conf/edbt/paper-T4.pdf).
-- **Slides**: to be updated.
+- **Slides**: [Slides](https://machuangtao.github.io/uploads/EDBT25_LLMKGQA-Tutorial.pdf)
