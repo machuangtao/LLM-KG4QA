@@ -18,6 +18,8 @@
   - [Multi-document QA](#multi-document-qa)
   - [Multi-Hop QA](#multi-hop-qa)
   - [Multi-run and Conversational QA](#multi-run-and-conversational-qa)
+  - [Temporal QA](#temporal-qa)
+  - [Multi-domain and Multilingual QA](#multi-domain-and-multilingual-qa)
 - [Advanced Topics](#3-advanced-topics)
   - [Optimization](#optimization)
   - [Data Management](#data-management)
@@ -37,14 +39,19 @@
 | 1 | Deep Bidirectional Language-Knowledge Graph pretraining   | NeurIPS | 2022|  Pre-training    | [Link](https://proceedings.neurips.cc/paper_files/paper/2022/file/f224f056694bcfe465c5d84579785761-Paper-Conference.pdf)                             
 | 2 | GreaseLM: Graph REASoning Enhanced Language Models    | ICLR    | 2022 |  Pre-training     | [Link](https://openreview.net/forum?id=41e9o6cQPj) 
 | 3 | InfuserKI: Enhancing Large Language Models with Knowledge Graphs via Infuser-Guided Knowledge Integration  | LLM+KG@VLDB   | 2024 | Pre-training     | [Link](https://arxiv.org/abs/2402.11441)
-| 4 | KaLM: Knowledge-aligned Autoregressive Language Modeling via Dual-view Knowledge Graph Contrastive Learning  | arXiv    | 2024 | Pre-training     | [Link](https://arxiv.org/abs/2412.04948)
-| 5 | KnowLA: Enhancing Parameter-efficient Finetuning with Knowledgeable Adaptation  | NAACL   | 2024 |  Fine-Tuning     | [Link](https://aclanthology.org/2024.naacl-long.396/)
-| 6 | KG-Adapter: Enabling Knowledge Graph Integration in Large Language Models through Parameter-Efficient Fine-Tuning  | ACL Findlings  | 2024 | Fine-Tuning     | [Link](https://aclanthology.org/2024.findings-acl.229/) 
-| 7 | A GAIL Fine-Tuned LLM Enhanced Framework for Low-Resource Knowledge Graph Question Answering  | CIKM    | 2024 |  Fine-Tuning    | [Link](https://dl.acm.org/doi/10.1145/3627673.3679753)
-| 8 | Prompting Large Language Models with Knowledge Graphs for Question Answering Involving Long-tail Facts  | arXiv       | 2024 |  KG-Augmented Prompting    | [Link](https://arxiv.org/abs/2405.06524)
-| 9 | KnowGPT: Knowledge Graph based Prompting for Large Language Models  | arXiv     | 2024 |  KG-Augmented Prompting    | [Link](https://arxiv.org/abs/2312.06185) 
-| 10 | Knowledge-Augmented Language Model Prompting for Zero-Shot Knowledge Graph Question Answering  | NLRSE          | 2023 |  KG-Augmented Prompting    | [Link](https://aclanthology.org/2023.nlrse-1.7/)
-| 11 | Retrieve-Rewrite-Answer: A KG-to-Text Enhanced LLMs Framework for Knowledge Graph Question Answering | IJCKG    | 2023 |  KG-Augmented Prompting    | [Link](https://ijckg2023.knowledge-graph.jp/pages/proc/paper_30.pdf/)
+| 4 | Large Language Models Meet Knowledge Graphs to Answer Factoid Questions  | PACLIC  | 2023 | Pre-training     | [Link](https://aclanthology.org/2023.paclic-1.63/)
+| 5 | KaLM: Knowledge-aligned Autoregressive Language Modeling via Dual-view Knowledge Graph Contrastive Learning  | arXiv    | 2024 | Pre-training     | [Link](https://arxiv.org/abs/2412.04948)
+| 6 | KBLaM: Knowledge Base augmented Language Model | ICLR    | 2025 | Pre-training     | [Link](https://openreview.net/forum?id=aLsMzkTej9)
+| 7 | KnowLA: Enhancing Parameter-efficient Finetuning with Knowledgeable Adaptation  | NAACL   | 2024 |  Fine-Tuning     | [Link](https://aclanthology.org/2024.naacl-long.396/)
+| 8 | KG-Adapter: Enabling Knowledge Graph Integration in Large Language Models through Parameter-Efficient Fine-Tuning  | ACL Findlings  | 2024 | Fine-Tuning     | [Link](https://aclanthology.org/2024.findings-acl.229/) 
+| 9 | A GAIL Fine-Tuned LLM Enhanced Framework for Low-Resource Knowledge Graph Question Answering  | CIKM    | 2024 |  Fine-Tuning    | [Link](https://dl.acm.org/doi/10.1145/3627673.3679753)
+| 10 | Knowledge Graph Finetuning Enhances Knowledge Manipulation in Large Language Models  | ICLR    | 2025 |  Fine-Tuning    | [Link](https://openreview.net/forum?id=oMFOKjwaRS)
+| 11 | KLearn Together: Joint Multitask Finetuning of Pretrained KG-enhanced LLM for Downstream Tasks  | GenAIK@COLING    | 2025 |  Fine-Tuning    | [Link](https://aclanthology.org/2025.genaik-1.2/)
+| 12 | Prompting Large Language Models with Knowledge Graphs for Question Answering Involving Long-tail Facts  | arXiv       | 2024 |  KG-Augmented Prompting    | [Link](https://arxiv.org/abs/2405.06524)
+| 13 | KnowGPT: Knowledge Graph based Prompting for Large Language Models  | arXiv     | 2024 |  KG-Augmented Prompting    | [Link](https://arxiv.org/abs/2312.06185) 
+| 14 | Knowledge-Augmented Language Model Prompting for Zero-Shot Knowledge Graph Question Answering  | NLRSE          | 2023 |  KG-Augmented Prompting    | [Link](https://aclanthology.org/2023.nlrse-1.7/)
+| 15 | Retrieve-Rewrite-Answer: A KG-to-Text Enhanced LLMs Framework for Knowledge Graph Question Answering | IJCKG    | 2023 |  KG-Augmented Prompting    | [Link](https://ijckg2023.knowledge-graph.jp/pages/proc/paper_30.pdf/)
+| 16 | Mitigating LLM Hallucinations with Knowledge Graphs: A Case Study | arXiv    | 2025 |  KG-Augmented Prompting    | [Link](https://arxiv.org/abs/2504.12422/)
 
 
 #### RAG (Retrieval Augmented Generation)
@@ -67,16 +74,22 @@
 | 14 | MSG-LLM: A Multi-scale Interactive Framework for Graph-enhanced Large Language Models | COLING  | 2025 | Graph RAG | [Link](https://aclanthology.org/2025.coling-main.648/)
 | 15 | PathRAG: Pruning Graph-based Retrieval Augmented Generation with Relational Paths | arXiv  | 2025 | Graph RAG | [Link](https://arxiv.org/abs/2502.14902/)
 | 16 | In-depth Analysis of Graph-based RAG in a Unified Framework | arXiv  | 2025 | Graph RAG | [Link](https://www.arxiv.org/abs/2503.04338/)
-| 17 | KG-RAG: Bridging the Gap Between Knowledge and Creativity | arXiv   | 2024 |  KG RAG   | [Link](https://arxiv.org/abs/2405.12035)
-| 18 | Retrieval-Augmented Generation with Knowledge Graphs for Customer Service Question Answering| SIGIR         | 2024 | KG RAG    | [Link](https://dl.acm.org/doi/10.1145/3626772.3661370)
-| 19 | REnhancing Large Language Models with Knowledge Graphs for Robust Question Answering | ICPADS   | 2024 |  KG RAG    | [Link](https://doi.ieeecomputersociety.org/10.1109/ICPADS63350.2024.00042) 
-| 20 | FRAG: A Flexible Modular Framework for Retrieval-Augmented Generation based on Knowledge Graphs | arXiv   | 2025 |  KG RAG    | [Link](https://arxiv.org/abs/2501.09957) 
-| 21 | SimGRAG: Leveraging Similar Subgraphs for Knowledge Graphs Driven Retrieval-Augmented Generation | arXiv   | 2025 |  KG RAG    | [Link](https://arxiv.org/abs/2412.15272) 
-| 22 | RGR-KBQA: Generating Logical Forms for Question Answering Using Knowledge-Graph-Enhanced Large Language Model | COLING   | 2025 |  KG RAG    | [Link](https://aclanthology.org/2025.coling-main.205) 
-| 23 | Knowledge Graph-Guided Retrieval Augmented Generation | arXiv   | 2025 |  KG RAG    | [Link](https://arxiv.org/abs/2502.06864) 
-| 24 | Simple Is Effective: The Roles of Graphs and Large Language Models in Knowledge-Graph-Based Retrieval-Augmented Generation | ICLR | 2025 | KG RAG  | [Link](https://openreview.net/forum?id=JvkuZZ04O7) 
-| 25 | Empowering LLMs by hybrid retrieval-augmented generation for domain-centric Q&A in smart manufacturing | Advanced Engineering Informatics | 2025| Hybrid RAG  | [Link](https://doi.org/10.1016/j.aei.2025.103212) 
-| 26 | Spatial-RAG: Spatial Retrieval Augmented Generation for Real-World Spatial Reasoning Questions | arXiv | 2025 | Spatial RAG  | [Link](https://arxiv.org/abs/2502.18470) 
+| 17 | Empowering GraphRAG with Knowledge Filtering and Integration | arXiv  | 2025 | Graph RAG | [Link](https://arxiv.org/abs/2503.13804/)
+| 18 | KG-RAG: Bridging the Gap Between Knowledge and Creativity | arXiv   | 2024 |  KG RAG   | [Link](https://arxiv.org/abs/2405.12035)
+| 19 | Retrieval-Augmented Generation with Knowledge Graphs for Customer Service Question Answering| SIGIR         | 2024 | KG RAG    | [Link](https://dl.acm.org/doi/10.1145/3626772.3661370)
+| 20 | REnhancing Large Language Models with Knowledge Graphs for Robust Question Answering | ICPADS   | 2024 |  KG RAG    | [Link](https://doi.ieeecomputersociety.org/10.1109/ICPADS63350.2024.00042) 
+| 21 | FRAG: A Flexible Modular Framework for Retrieval-Augmented Generation based on Knowledge Graphs | arXiv   | 2025 |  KG RAG    | [Link](https://arxiv.org/abs/2501.09957) 
+| 22 | SimGRAG: Leveraging Similar Subgraphs for Knowledge Graphs Driven Retrieval-Augmented Generation | arXiv   | 2025 |  KG RAG    | [Link](https://arxiv.org/abs/2412.15272) 
+| 23 | RGR-KBQA: Generating Logical Forms for Question Answering Using Knowledge-Graph-Enhanced Large Language Model | COLING   | 2025 |  KG RAG    | [Link](https://aclanthology.org/2025.coling-main.205) 
+| 24 | Knowledge Graph-Guided Retrieval Augmented Generation | arXiv   | 2025 |  KG RAG    | [Link](https://arxiv.org/abs/2502.06864) 
+| 25 | Simple Is Effective: The Roles of Graphs and Large Language Models in Knowledge-Graph-Based Retrieval-Augmented Generation | ICLR | 2025 | KG RAG  | [Link](https://openreview.net/forum?id=JvkuZZ04O7) 
+| 26 | CoT-RAG: Integrating Chain of Thought and Retrieval-Augmented Generation to Enhance Reasoning in Large Language Models | arXiv | 2025 | KG RAG  | [Link](https://arxiv.org/abs/2504.13534) 
+| 27 | A Pilot Empirical Study on When and How to Use Knowledge Graphs as Retrieval Augmented Generation | arXiv | 2025 | KG RAG  | [Link](https://arxiv.org/abs/2502.20854) 
+| 28 | A Systematic Exploration of Knowledge Graph Alignment with Large Language Models in Retrieval Augmented Generation | AAAI | 2025 | KG RAG  | [Link](https://ojs.aaai.org/index.php/AAAI/article/view/34716) 
+| 29 | Evaluating Knowledge Graph Based Retrieval Augmented Generation Methods under Knowledge Incompleteness | arXiv | 2025 | KG RAG  | [Link](https://arxiv.org/abs/2504.05163) 
+| 30 | RAG-KG-IL: A Multi-Agent Hybrid Framework for Reducing Hallucinations and Enhancing LLM Reasoning through RAG and Incremental Knowledge Graph Learning Integration | arXiv | 2025 | KG RAG  | [Link](https://arxiv.org/abs/2503.13514) 
+| 31 | Empowering LLMs by hybrid retrieval-augmented generation for domain-centric Q&A in smart manufacturing | Advanced Engineering Informatics | 2025| Hybrid RAG  | [Link](https://doi.org/10.1016/j.aei.2025.103212) 
+| 32 | Spatial-RAG: Spatial Retrieval Augmented Generation for Real-World Spatial Reasoning Questions | arXiv | 2025 | Spatial RAG  | [Link](https://arxiv.org/abs/2502.18470) 
 
 ### KGs as Reasoning Guideline
 
@@ -97,12 +110,13 @@
 | 13 | KG-Agent: An Efficient Autonomous Agent Framework for Complex Reasoning over Knowledge Grap   | arXiv  | 2024 |  Agent-based KG Guildlines    | [Link](https://arxiv.org/abs/2402.11163) 
 | 14 | ODA: Observation-Driven Agent for integrating LLMs and Knowledge Graphs   | ACL Findings  | 2024 |  Agent-based KG Guildlines    | [Link](https://aclanthology.org/2024.findings-acl.442/)                                                         |
 | 15 | A Collaborative Reasoning Framework Powered by Reinforcement Learning and Large Language Models for Complex Questions Answering over Knowledge Graph | COLING| 2025 |  Collaborative Reasoning   | [Link](https://aclanthology.org/2025.coling-main.712/)  
+| 16 | Rule-KBQA: Rule-Guided Reasoning for Complex Knowledge Base Question Answering with Large Language Models | COLING| 2025 |  Rule-Guided Reasoning   | [Link](https://aclanthology.org/2025.coling-main.562/)  
 
 ### KGs as Refiner and Filter
 
 | NO | Title                                                                                                        | Venue                                                                                                                                                    | Year | Category                                       |Paper Link                                                                                           |
 |----|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|------|------------------------------------------------|------------------------------------------------------------------------------------------------|
-| 1 | Answer Candidate Type Selection: Text-To-Text Language Model for Closed Book Question Answering Meets Knowledge Graphs   | KONVENS                                                                                           | 2023 |  KG-Driven Filtering and Validation    | [Link](https://aclanthology.org/2023.konvens-main.16/)
+| 1 | Answer Candidate Type Selection: Text-To-Text Language Model for Closed Book Question Answering Meets Knowledge Graphs   | KONVENS    | 2023 |  KG-Driven Filtering and Validation    | [Link](https://aclanthology.org/2023.konvens-main.16/)
 | 2 | KG-Rank: Enhancing Large Language Models for Medical QA with Knowledge Graphs and Ranking Techniques      | BioNLP Workshop                                               | 2024 |KG-Driven Filtering and Validation | [Link](https://aclanthology.org/2024.bionlp-1.13/) 
 | 3 | Mitigating Large Language Model Hallucinations via Autonomous Knowledge Graph-based Retrofitting      | AAAI                                                | 2024 |KG-Driven Filtering and Validation | [Link](https://ojs.aaai.org/index.php/AAAI/article/view/29770/31326)
 | 4 | Evidence-Focused Fact Summarization for Knowledge-Augmented Zero-Shot Question Answering      | ariXv                                               | 2024 |KG-Augmented Output Refinement | [Link](https://arxiv.org/abs/2403.02966)
@@ -154,6 +168,8 @@
 | 7 | From Superficial to Deep: Integrating External Knowledge for Follow-up Question Generation Using Knowledge Graph and LLM   | COLING         | 2025 |  Multi-Hop QA   | [Link](https://aclanthology.org/2025.coling-main.55/)
 | 8 | Multi-Hop Question Answering with LLMs & Knowledge Graphs   | Blog           | 2023 |  Multi-Hop QA    | [Link](https://www.wisecube.ai/blog-2/multi-hop-question-answering-with-llms-knowledge-graphs/)
 | 9 | Mitigating Lost-in-Retrieval Problems in Retrieval Augmented Multi-Hop Question Answering   | arXiv           | 2025 |  Multi-Hop QA    | [Link](https://arxiv.org/abs/2502.14245)
+| 10 | Knowledge Graph Based Retrieval-Augmented Generation for Multi-Hop Question Answering Enhancement   | IEEE IKT   | 2024 |  Multi-Hop QA    | [Link](https://ieeexplore.ieee.org/abstract/document/10892619)
+| 11 | A Framework of Knowledge Graph-Enhanced Large Language Model Based on Question Decomposition and Atomic Retrieval   | EMNLP Findings   | 2024 |  Multi-Hop QA    | [Link](https://aclanthology.org/2024.findings-emnlp.670/)
 
 ### Multi-run and Conversational QA
 
@@ -165,6 +181,23 @@
 | 4 | Learning When to Retrieve, What to Rewrite, and How to Respond in Conversational QA   | EMNLP | 2024 |   Conversational QA     | [Link](https://aclanthology.org/2024.findings-emnlp.622)
 | 5 | ConvKGYarn: Spinning Configurable and Scalable Conversational Knowledge Graph QA Datasets with Large Language Models  | EMNLP | 2024 |   Conversational QA     | [Link](https://aclanthology.org/2024.emnlp-industry.89)
 | 6 | Dialogue Benchmark Generation from Knowledge Graphs with Cost-Effective Retrieval-Augmented LLMs  | SIGMOD | 2025 |   Dialogue      | [Link](https://arxiv.org/abs/2501.09928)
+
+### Temporal QA
+
+| NO | Title                                                                                                        | Venue                                                                                                                                                    | Year | Category                                       | Paper Link                                                                                           |
+|----|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|------|------------------------------------------------|------------------------------------------------------------------------------------------------|
+| 1 | KG-IRAG: A Knowledge Graph-Based Iterative Retrieval-Augmented Generation Framework for Temporal Reasoning   | arXiv        | 2025 |  Temporal QA   | [Link](https://arxiv.org/abs/2503.14234)
+| 2 | Two-stage Generative Question Answering on Temporal Knowledge Graph Using Large Language Models   | ACL Findings        | 2024 |  Temporal QA   | [Link](https://aclanthology.org/2024.findings-acl.401)
+| 3 | TimeR4 : Time-aware Retrieval-Augmented Large Language Models for Temporal Knowledge Graph Question Answering   | EMNLP       | 2024 |  Temporal QA   | [Link](https://aclanthology.org/2024.emnlp-main.394/)
+
+
+### Multi-domain and Multilingual QA
+
+| NO | Title                                                                                                        | Venue                                                                                                                                                    | Year | Category                                       | Paper Link                                                                                           |
+|----|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|------|------------------------------------------------|------------------------------------------------------------------------------------------------|
+| 1 | MKG-Rank: Enhancing Large Language Models with Knowledge Graph for Multilingual Medical Question Answering   | arXiv        | 2025 |  Multilingual QA   | [Link](https://arxiv.org/abs/2503.16131)
+| 2 | Language Models as SPARQL Query Filtering for Improving the Quality of Multilingual Question Answering over Knowledge Graphs   | IWCE    | 2024 |  Multilingual QA   | [Link](https://link.springer.com/chapter/10.1007/978-3-031-62362-2_1)
+
 
 ## 3. Advanced Topics
 
@@ -214,12 +247,15 @@
 | 13 | Demystifying Natural Language to Cypher Conversion with OpenAI, Neo4j, LangChain, and LangSmith  |  Blog  | 2024 |  NL2GQL    | [Link](https://medium.com/@muthoju.pavan/demystifying-natural-language-to-cypher-conversion-with-openai-neo4j-langchain-and-langsmith-2dbecb1e2ce9/)
 | 14 | Text2Cypher, the beginning of the Graph + LLM stack  |  Blog  | 2023 |  NL2GQL    | [Link](https://siwei.io/en/llm-text-to-nebulagraph-query/)
 | 15 | Text2Cypher - Natural Language Queries  |  Blog  | 2023 |  NL2GQL    | [Link](https://neo4j.com/labs/neodash/2.4/user-guide/extensions/natural-language-queries/)
-| 16 | LLaSA: Large Language and Structured Data Assistant   | arXiv | 2024 | Structured Data Assistant | [Link](https://arxiv.org/abs/2411.14460)     
-| 17 | GraphRAG and role of Graph Databases in Advancing AI   | IJRCAIT | 2024 | Graph DB | [Link](https://doi.org/10.5281/zenodo.13908615) 
-| 18 | TigerVector: Supporting Vector Search in Graph Databases for Advanced RAGs | arXiv | 2025 | Graph DB | [Link](https://arxiv.org/abs/2501.11216) 
-| 19 | Increasing Accuracy of LLM-powered Question Answering on SQL databases: Knowledge Graphs to the Rescue  | Data Engineering Bulletin | 2024 | RDB QA | [Link](http://sites.computer.org/debull/A24dec/p109.pdf)  
-| 20 | Symphony: Towards Trustworthy Question Answering and Verification using RAG over Multimodal Data Lakes  | Data Engineering Bulletin | 2024 | RDB QA | [Link](http://sites.computer.org/debull/A24dec/p135.pdf)  
-| 21 | Increasing the LLM Accuracy for Question Answering: Ontologies to the Rescue!  | arXiv | 2024 | RDB QA | [Link](https://arxiv.org/abs/2405.11706)    
+| 16 | A Framework for Question Answering on Knowledge Graphs Using Large Language Models  |  ESWC  | 2024 |  NL2GQL    | [Link](https://link.springer.com/chapter/10.1007/978-3-031-78952-6_20/)
+| 17 | LLaSA: Large Language and Structured Data Assistant   | arXiv | 2024 | Structured Data Assistant | [Link](https://arxiv.org/abs/2411.14460)     
+| 18 | GraphRAG and role of Graph Databases in Advancing AI   | IJRCAIT | 2024 | Graph DB | [Link](https://doi.org/10.5281/zenodo.13908615) 
+| 19 | TigerVector: Supporting Vector Search in Graph Databases for Advanced RAGs | arXiv | 2025 | Graph DB | [Link](https://arxiv.org/abs/2501.11216) 
+| 20 | Increasing Accuracy of LLM-powered Question Answering on SQL databases: Knowledge Graphs to the Rescue  | Data Engineering Bulletin | 2024 | RDB QA | [Link](http://sites.computer.org/debull/A24dec/p109.pdf)  
+| 21 | Symphony: Towards Trustworthy Question Answering and Verification using RAG over Multimodal Data Lakes  | Data Engineering Bulletin | 2024 | RDB QA | [Link](http://sites.computer.org/debull/A24dec/p135.pdf)  
+| 22 | Increasing the LLM Accuracy for Question Answering: Ontologies to the Rescue!  | arXiv | 2024 | RDB QA | [Link](https://arxiv.org/abs/2405.11706)  
+| 23 | GTR: Graph-Table-RAG for Cross-Table Question Answering  | arXiv | 2025 | RDB QA | [Link](https://arxiv.org/abs/2504.01346)  
+| 24 | ER-RAG: Enhance RAG with ER-Based Unified Modeling of Heterogeneous Data Sources  | arXiv | 2025 | RDB QA | [Link](https://arxiv.org/abs/2504.06271)    
 
 
 ## 4. Benchmark and Applications
@@ -247,16 +283,19 @@
 | 17 | Complex Temporal Question Answering on Knowledge Graphs| CIKM | 2021 | [EXAQT](https://exaqt.mpi-inf.mpg.de/)|  Temporal QA| [Link](https://dl.acm.org/doi/10.1145/3459637.3482416)
 | 18 | Leave No Document Behind: Benchmarking Long-Context LLMs with Extended Multi-Doc QA| EMNLP | 2024 | [Loong](https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/Loong)|  Multi-doc QA| [Link](https://aclanthology.org/2024.emnlp-main.322)
 | 19 | MRAMG-Bench: A BeyondText Benchmark for Multimodal Retrieval-Augmented Multimodal Generation | arXiv  | 2025 | [MRAMG](https://huggingface.co/MRAMG)|  Multi-modal QA| [Link](https://arxiv.org/abs/2502.04176)
-| 20 | OMG-QA: Building Open-Domain Multi-Modal Generative Question Answering Systems | EMNLP  | 2024 | [OMG-QA](https://github.com/linyongnan/OMG-QA)|  Multi-modal QA| [Link](https://aclanthology.org/2024.emnlp-industry.75)
-| 21 | M3SciQA: A Multi-Modal Multi-Document Scientific QA Benchmark for Evaluating Foundation Models | ACL Findings  | 2024 | [M3SciQA](https://github.com/yale-nlp/M3SciQA)|  Multi-modal QA| [Link](https://aclanthology.org/2024.findings-emnlp.904)
-| 22 | A Benchmark to Understand the Role of Knowledge Graphs on Large Language Model's Accuracy for Question Answering on Enterprise SQL Databases  | GRADES-NDA  | 2024 | [ChatData](https://github.com/datadotworld/cwd-benchmark-data) |  LLM and KGs for QA| [Link](https://dl.acm.org/doi/10.1145/3661304.3661901)
-| 23 | XplainLLM: A Knowledge-Augmented Dataset for Reliable Grounded Explanations in LLMs  | EMNLP  | 2024 | [XplainLLM](https://github.com/chen-zichen/XplainLLM_dataset) |  LLM and KGs for QA| [Link](https://arxiv.org/abs/2311.08614)
-| 24 | Developing a Scalable Benchmark for Assessing Large Language Models in Knowledge Graph Engineering  | SEMANTICS   | 2023 | [LLM-KG-Bench](https://github.com/AKSW/LLM-KG-Bench)|  LLM and KGs for QA| [Link](https://ceur-ws.org/Vol-3526/paper-04.pdf)
-| 25 | Docugami Knowledge Graph Retrieval Augmented Generation (KG-RAG) Datasets | -  | 2023 | [KG-RAG](https://github.com/docugami/KG-RAG-datasets)|  LLM and KGs for QA| -
-| 26 | How Credible Is an Answer From Retrieval-Augmented LLMs? Investigation and Evaluation With Multi-Hop QA  | ACL ARR   | 2024 |- |  LLM and KGs for QA| [Link](https://openreview.net/forum?id=YsmnPHBbx1f)
-| 27 | Can Knowledge Graphs Make Large Language Models More Trustworthy? An Empirical Study over Open-ended Question Answering  | arXiv  | 2024 |[OKGQA](https://anonymous.4open.science/r/OKGQA-CBB0) |  LLM and KGs for QA| [Link](https://arxiv.org/abs/2410.08085)
-| 28 | MiniRAG: Towards Extremely Simple Retrieval-Augmented Generation | arXiv  | 2025 | [LiHua-World](https://github.com/HKUDS/MiniRAG/tree/main/dataset/LiHua-World)|  LLM and KGs for QA| [Link](https://arxiv.org/abs/2501.06713)
-| 29 | Can Knowledge Graphs Make Large Language Models More Trustworthy? An Empirical Study Over Open-ended Question Answering   | arXiv | 2025 | [OKGQA](https://anonymous.4open.science/r/OKGQA-CBB0) | LLM and KGs for QA| [Link](https://arxiv.org/abs/2410.08085)
+| 20 | OMG-QA: Building Open-Domain Multi-Modal Generative Question Answering Systems | EMNLP  | 2024 | [OMG-QA](https://github.com/linyongnan/OMG-QA)|  Multi-domain Multilingual QA| [Link](https://aclanthology.org/2024.findings-emnlp.365)
+| 21 | WebFAQ: A Multilingual Collection of Natural Q&A Datasets for Dense Retrieval | arXiv  | 2025 | [WebFAQ](https://github.com/padas-lab-de/webfaq)|  Multi-domain Multilingual QA| [Link](https://arxiv.org/abs/2502.20936)
+| 22 | M2QA: Multi-domain Multilingual Question Answering | EMNLP  | 2024 | [M2QA](https://github.com/UKPLab/m2qa)|  Multi-modal QA| [Link](https://aclanthology.org/2024.emnlp-industry.75)
+| 23 | M3SciQA: A Multi-Modal Multi-Document Scientific QA Benchmark for Evaluating Foundation Models | ACL Findings  | 2024 | [M3SciQA](https://github.com/yale-nlp/M3SciQA)|  Multi-modal QA| [Link](https://aclanthology.org/2024.findings-emnlp.904)
+| 24 | A Benchmark to Understand the Role of Knowledge Graphs on Large Language Model's Accuracy for Question Answering on Enterprise SQL Databases  | GRADES-NDA  | 2024 | [ChatData](https://github.com/datadotworld/cwd-benchmark-data) |  LLM and KGs for QA| [Link](https://dl.acm.org/doi/10.1145/3661304.3661901)
+| 25 | XplainLLM: A Knowledge-Augmented Dataset for Reliable Grounded Explanations in LLMs  | EMNLP  | 2024 | [XplainLLM](https://github.com/chen-zichen/XplainLLM_dataset) |  LLM and KGs for QA| [Link](https://arxiv.org/abs/2311.08614)
+| 26 | Developing a Scalable Benchmark for Assessing Large Language Models in Knowledge Graph Engineering  | SEMANTICS   | 2023 | [LLM-KG-Bench](https://github.com/AKSW/LLM-KG-Bench)|  LLM and KGs for QA| [Link](https://ceur-ws.org/Vol-3526/paper-04.pdf)
+| 27 | Docugami Knowledge Graph Retrieval Augmented Generation (KG-RAG) Datasets | -  | 2023 | [KG-RAG](https://github.com/docugami/KG-RAG-datasets)|  LLM and KGs for QA| -
+| 28 | How Credible Is an Answer From Retrieval-Augmented LLMs? Investigation and Evaluation With Multi-Hop QA  | ACL ARR   | 2024 |- |  LLM and KGs for QA| [Link](https://openreview.net/forum?id=YsmnPHBbx1f)
+| 29 | Can Knowledge Graphs Make Large Language Models More Trustworthy? An Empirical Study over Open-ended Question Answering  | arXiv  | 2024 |[OKGQA](https://anonymous.4open.science/r/OKGQA-CBB0) |  LLM and KGs for QA| [Link](https://arxiv.org/abs/2410.08085)
+| 30 | MiniRAG: Towards Extremely Simple Retrieval-Augmented Generation | arXiv  | 2025 | [LiHua-World](https://github.com/HKUDS/MiniRAG/tree/main/dataset/LiHua-World)|  LLM and KGs for QA| [Link](https://arxiv.org/abs/2501.06713)
+| 31 | Learn to Explain: Multimodal Reasoning via Thought Chains for Science Question Answering   | NeurIPS Dataset and Benchmarks Track | 2022 | [ScienceQA](https://github.com/lupantech/ScienceQA) | LLM and KGs for QA| [Link](https://proceedings.neurips.cc/paper_files/paper/2022/file/11332b6b6cf4485b84afadb1352d3a9a-Paper-Conference.pdf)
+| 32 | STaRK: Benchmarking LLM Retrieval on Textual and Relational Knowledge Bases  | NeurIPS Dataset and Benchmarks Track | 2024 | [STaRK](https://github.com/snap-stanford/STaRK) | LLM and KGs for QA| [Link](https://proceedings.neurips.cc/paper_files/paper/2024/hash/e607b1419e9ae7cd5cb5b5bb60c2ad5c-Abstract-Datasets_and_Benchmarks_Track.html)
 
 ### Industrial and Scientific Applications
 
@@ -271,6 +310,7 @@
 | 7 |MedRAG: Enhancing Retrieval-augmented Generation with Knowledge Graph-Elicited Reasoning for Healthcare Copilot |WWW| 2025 | [MedRAG](https://github.com/SNOWTEAM2023/MedRAG)|  LLM and KGs for QA| [Link](https://openreview.net/pdf/7d3d9ad2d616ceae8c5b77eb94019086b980ceda.pdf)
 | 8 |EICopilot: Search and Explore Enterprise Information over Large-scale Knowledge Graphs with LLM-driven Agents |arXiv| 2025 | - | LLM and KGs for QA| [Link](https://arxiv.org/abs/2501.13746)
 | 9 |Nanjing Yunjin intelligent question-answering system based on knowledge graphs and retrieval augmented generation technology |Heritage Science| 2024 | - | LLM and KGs for QA| [Link](https://www.nature.com/articles/s40494-024-01231-3)
+| 10 |A Joint LLM-KG System for Disease Q&A |IEEE JBHI| 2025 | - | LLM and KGs for QA| [Link](https://ieeexplore.ieee.org/abstract/document/10787401)
 
 ### Demo
 
@@ -281,6 +321,7 @@
 | 3 | BioGraphRAG  | This a platform to integrate biomedical knowledge graphs stored in NebulaGraph with LLMs via GraphRAG architecture.  |  | [BioGraphRAG](https://github.com/devingupta1/BioGraphRAG)
 | 4 | kotaemon  |An open-source clean & customizable RAG UI for chatting with your documents. Built with both end users and developers in mind. | Cinnamon AI | [kotaemon](https://github.com/Cinnamon/kotaemon)
 | 5 | PIKE-RAG  |A secIalized KnowledgE and Rationale Augmented Generation, which focuses on extracting, understanding, and applying domain-specific knowledge to gradually guide LLMs toward accurate responses. | Microsoft | [PIKE-RAG](https://github.com/microsoft/PIKE-RAG)
+| 6 | AprèsCoT |AprèsCoT: Explaining LLM Answers with Knowledge Graphs and Chain of Thought. | [EDBT25 Demo](https://openproceedings.org/2025/conf/edbt/paper-337.pdf) | [AprèsCoT](http://lg-research-2.uwaterloo.ca:8050/aprescot)
 
 ## 5. Related Survey
 
@@ -299,3 +340,13 @@
 | 11 | A Survey of Graph Retrieval-Augmented Generation for Customized Large Language Models   | arXiv    |  2025 |  [Link](https://arxiv.org/abs/2501.13958)
 | 12 | Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG   | arXiv   |  2025 |  [Link](https://arxiv.org/abs/2501.09136)
 | 13 | A survey on augmenting knowledge graphs (KGs) with large language models (LLMs): models, evaluation metrics, benchmarks, and challenges  |Discover Artificial Intelligence   |  2024 |  [Link](https://link.springer.com/article/10.1007/s44163-024-00175-8)
+| 14 | Unifying Large Language Models and Knowledge Graphs for efficient Regulatory Information Retrieval and Answer Generation  |REgNLP Workshop  |  2025 |  [Link](https://aclanthology.org/2025.regnlp-1.4/)
+| 15 | A Comprehensive Survey of Knowledge-Based Vision Question Answering Systems: The Lifecycle of Knowledge in Visual Reasoning Task  |arXiv  |  2025 |  [Link](https://arxiv.org/abs/2504.17547)
+| 16 | Knowledge Conflicts for LLMs: A Survey  |EMNLP  |  2024 |  [Link](https://aclanthology.org/2024.emnlp-main.486/)
+| 17 | A comprehensive survey on integrating large language models with knowledge-based methods  | Knowledge-Based Systems  |  2025 |  [Link](https://doi.org/10.1016/j.knosys.2025.113503/)
+| 18 | Synergizing RAG and Reasoning: A Systematic Review  | arXiv  |  2025 |  [Link](https://arxiv.org/abs/2504.15909/)
+| 19 | A Survey of Multimodal Retrieval-Augmented Generation  | arXiv  |  2025 |  [Link](https://arxiv.org/abs/2504.08748/)
+| 20 | Retrieval-Augmented Generation with Knowledge Graphs: A Survey  | OpenReview  |  2025 |  [Link](https://openreview.net/forum?id=ZikTuGY28C/)
+| 21 | Complex QA and language models hybrid architectures, Survey  | arXiv| 2023 |  [Link](https://arxiv.org/abs/2302.09051)
+| 22 | Multilingual question answering systems for knowledge graphs – a survey  |Semantic Web  |  2024 |  [Link](https://journals.sagepub.com/doi/full/10.3233/SW-243633)
+| 23 | Injecting Domain-Specific Knowledge into Large Language Models: A Comprehensive Survey |arXiv  |  2025 |  [Link](https://arxiv.org/abs/2502.10708)
