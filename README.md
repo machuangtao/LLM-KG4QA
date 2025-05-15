@@ -1,7 +1,5 @@
 # LLM-KG4QA: Large Language Models and Knowledge Graphs for Question Answering
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![](https://img.shields.io/github/last-commit/machuangtao/LLM-KG4QA?color=blue) ![Stars](https://img.shields.io/github/stars/machuangtao/LLM-KG4QA?color=blue)  ![Forks](https://img.shields.io/github/forks/machuangtao/LLM-KG4QA?color=blue&label=Fork)
-
 
 ## Content
 - [LLM and KGs for QA](#1-llms-and-kgs-for-qa)
