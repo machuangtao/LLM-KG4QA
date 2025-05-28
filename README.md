@@ -3,8 +3,8 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![](https://img.shields.io/github/last-commit/machuangtao/LLM-KG4QA?color=blue) ![Stars](https://img.shields.io/github/stars/machuangtao/LLM-KG4QA?color=blue)  ![Forks](https://img.shields.io/github/forks/machuangtao/LLM-KG4QA?color=blue&label=Fork)
 
 ## 🔔 News
-- **`2025-05`** The preprint of our survey is avaliable on **[arXiv](https://arxiv.org/abs/2505.20099)**.
-- **`2025-02`** Our [tutorial](https://machuangtao.github.io/LLM-KG4QA/tutorial-edbt25) was accepted to be presented at **[EDBT2025](https://edbticdt2025.upc.edu/?contents=accepted-papers-tutorials.html).**
+- **`2025-05`** The preprint of our extended survey is avaliable on **[arXiv](https://arxiv.org/abs/2505.20099)**.
+- **`2025-02`** Our [tutorial](https://machuangtao.github.io/LLM-KG4QA/tutorial-edbt25) was accepted to be presented at **EDBT2025**
 - **`2024-12`** We create this repository to maintain a paper list on **LLMs and KGs for QA.**
 
 If you find our work is useful,  please cite our paper by using the following BibTeX entry.
@@ -14,15 +14,6 @@ If you find our work is useful,  please cite our paper by using the following Bi
   title={Large Language Models Meet Knowledge Graphs for Question Answering: Synthesis and Opportunities},
   author={Ma, Chuangtao and Chen, Yongrui and Wu, Tianxing and Khan, Arijit and Wang, Haofen},
   journal={arXiv preprint arXiv:2505.20099},
-  year={2025}
-}
-```
-```
-@inproceedings{ma2025unifying,
-  title={Unifying Large Language Models and Knowledge Graphs for Question Answering: Recent Advances and Opportunities},
-  author={Ma, Chuangtao and Chen, Yongrui and Wu, Tianxing and Khan, Arijit and Wang, Haofen},
-  booktitle={EDBT},
-  pages={1174--1177},
   year={2025}
 }
 ```
