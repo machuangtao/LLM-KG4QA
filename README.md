@@ -2,9 +2,21 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![](https://img.shields.io/github/last-commit/machuangtao/LLM-KG4QA?color=blue) ![Stars](https://img.shields.io/github/stars/machuangtao/LLM-KG4QA?color=blue)  ![Forks](https://img.shields.io/github/forks/machuangtao/LLM-KG4QA?color=blue&label=Fork)
 
-<!-- ## 🔔 News
-- **`2025-02`** Our [tutorial](https://machuangtao.github.io/LLM-KG4QA/tutorial-edbt25) was accepted to be presented at **EDBT/ICDT 2025 joint conference.**
-- **`2024-12`** We create this repository to maintain a paper list on **Large Language Models and Knowledge Graphs for Question Answering.** -->
+## 🔔 News
+- **`2025-05`** The preprint of our survey is avaliable on **[arXiv](https://arxiv.org/abs/2505.20099)**.
+- **`2025-02`** Our [tutorial](https://machuangtao.github.io/LLM-KG4QA/tutorial-edbt25) was accepted to be presented at **[EDBT2025](https://edbticdt2025.upc.edu/?contents=accepted-papers-tutorials.html).**
+- **`2024-12`** We create this repository to maintain a paper list on **LLMs and KGs for QA.**
+
+If you find this paper list or our survey useful,  please cite our paper by using the following BibTeX entry.
+
+```
+@article{ma2025llmkg4qa,
+  title={Large Language Models Meet Knowledge Graphs for Question Answering: Synthesis and Opportunities},
+  author={Ma, Chuangtao and Chen, Yongrui and Wu, Tianxing and Khan, Arijit and Wang, Haofen},
+  journal={arXiv preprint arXiv:2505.20099},
+  year={2025}
+}
+```
 
 ## Content
 - [LLM and KGs for QA](#1-llms-and-kgs-for-qa)
@@ -304,6 +316,7 @@
 | 32 | STaRK: Benchmarking LLM Retrieval on Textual and Relational Knowledge Bases  | NeurIPS Dataset and Benchmarks Track | 2024 | [STaRK](https://github.com/snap-stanford/STaRK) | LLM and KGs for QA| [Link](https://proceedings.neurips.cc/paper_files/paper/2024/hash/e607b1419e9ae7cd5cb5b5bb60c2ad5c-Abstract-Datasets_and_Benchmarks_Track.html)
 | 33 | mmRAG: A Modular Benchmark for Retrieval-Augmented Generation over Text, Tables, and Knowledge Graphs  | arXiv | 2025 | [mmRAG](https://huggingface.co/datasets/Askio/mmrag_benchmark) | LLM and KGs for QA| [Link](https://arxiv.org/abs/2505.11180)
 | 34 | LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs -- No Silver Bullet for LC or RAG Routing | arXiv | 2025 | [LaRA](https://github.com/Alibaba-NLP/LaRA) | LLM and KGs for QA| [Link](https://arxiv.org/abs/2502.09977)
+| 35 | KGQAGen: Diagnosing and Addressing Pitfalls in KG-RAG Datasets, toward More Reliable Benchmarking | - | 2025 | [KGQAGen](https://github.com/liangliang6v6/KGQAGen) | LLM and KGs for QA| -
 
 ### Industrial and Scientific Applications
 
