@@ -3,8 +3,9 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![](https://img.shields.io/github/last-commit/machuangtao/LLM-KG4QA?color=blue) ![Stars](https://img.shields.io/github/stars/machuangtao/LLM-KG4QA?color=blue)  ![Forks](https://img.shields.io/github/forks/machuangtao/LLM-KG4QA?color=blue&label=Fork)
 
 ## 🔔 News
+- **`2025-08`** Our [survey](https://arxiv.org/abs/2505.20099) has been accepted to **[EMNLP2025](https://2025.emnlp.org)** main conference.
 - **`2025-05`** The preprint of our extended survey is avaliable on **[arXiv](https://arxiv.org/abs/2505.20099)**.
-- **`2025-02`** Our [tutorial](https://machuangtao.github.io/LLM-KG4QA/tutorial-edbt25) was accepted to be presented at **EDBT2025**
+- **`2025-02`** Our [tutorial](https://machuangtao.github.io/LLM-KG4QA/tutorial-edbt25) was accepted to be presented at **EDBT2025**.
 - **`2024-12`** We create this repository to maintain a paper list on **LLMs and KGs for QA.**
 
 If you find our work is useful,  please cite our paper by using the following BibTeX entry.
@@ -124,10 +125,14 @@ If you find our work is useful,  please cite our paper by using the following Bi
 | 10 | Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation   | ICLR  | 2024 |  Online KG Guildlines    | [Link](https://openreview.net/forum?id=oFBu7qaZpS)
 | 11 | KARPA: A Training-free Method of Adapting Knowledge Graph as References for Large Language Model's Reasoning Path Aggregation   | arXiv  | 2024 |  Online KG Guildlines    | [Link](https://arxiv.org/abs/2412.20995)
 | 12 | Retrieval and Reasoning on KGs: Integrate Knowledge Graphs into Large Language Models for Complex Question Answering   | EMNLP  | 2024 |  Online KG Guildlines    | [Link](https://aclanthology.org/2024.findings-emnlp.446)
-| 13 | KG-Agent: An Efficient Autonomous Agent Framework for Complex Reasoning over Knowledge Grap   | arXiv  | 2024 |  Agent-based KG Guildlines    | [Link](https://arxiv.org/abs/2402.11163) 
-| 14 | ODA: Observation-Driven Agent for integrating LLMs and Knowledge Graphs   | ACL Findings  | 2024 |  Agent-based KG Guildlines    | [Link](https://aclanthology.org/2024.findings-acl.442/)                                                         |
-| 15 | A Collaborative Reasoning Framework Powered by Reinforcement Learning and Large Language Models for Complex Questions Answering over Knowledge Graph | COLING| 2025 |  Collaborative Reasoning   | [Link](https://aclanthology.org/2025.coling-main.712/)  
-| 16 | Rule-KBQA: Rule-Guided Reasoning for Complex Knowledge Base Question Answering with Large Language Models | COLING| 2025 |  Rule-Guided Reasoning   | [Link](https://aclanthology.org/2025.coling-main.562/)  
+| 13 | HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models   | NeurIPS  | 2024 |  Online KG Guildlines    | [Link](https://proceedings.neurips.cc/paper_files/paper/2024/file/6ddc001d07ca4f319af96a3024f6dbd1-Paper-Conference.pdf)
+| 14 | KG-Agent: An Efficient Autonomous Agent Framework for Complex Reasoning over Knowledge Grap   | arXiv  | 2024 |  Agent-based KG Guildlines    | [Link](https://arxiv.org/abs/2402.11163) 
+| 15 | ODA: Observation-Driven Agent for integrating LLMs and Knowledge Graphs   | ACL Findings  | 2024 |  Agent-based KG Guildlines    | [Link](https://aclanthology.org/2024.findings-acl.442/)     
+| 16 | Plan-on-graph: self-correcting adaptive planning of large language model on knowledge graphs   | NeruIPS  | 2024 |  Agent-based KG Guildlines    | [Link](https://openreview.net/pdf?id=CwCUEr6wO5)  
+| 17 | AtomR: Atomic Operator-Empowered Large Language Models for Heterogeneous Knowledge Reasoning   | KDD  | 2025 |  Agent-based KG Guildlines    | [Link](https://doi.org/10.1145/3711896.37368)    
+| 18 | Youtu-GraphRAG: Vertically Unified Agents for Graph Retrieval-Augmented Complex Reasoning   | arXiv  | 2025 |  Agent-based KG Guildlines    | [Link](https://arxiv.org/abs/2508.19855)    
+| 19 | A Collaborative Reasoning Framework Powered by Reinforcement Learning and Large Language Models for Complex Questions Answering over Knowledge Graph | COLING| 2025 |  Collaborative Reasoning   | [Link](https://aclanthology.org/2025.coling-main.712/)  
+| 20 | Rule-KBQA: Rule-Guided Reasoning for Complex Knowledge Base Question Answering with Large Language Models | COLING| 2025 |  Rule-Guided Reasoning   | [Link](https://aclanthology.org/2025.coling-main.562/)  
 
 ### KGs as Refiner and Filter
 
@@ -310,13 +315,14 @@ If you find our work is useful,  please cite our paper by using the following Bi
 | 26 | Developing a Scalable Benchmark for Assessing Large Language Models in Knowledge Graph Engineering  | SEMANTICS   | 2023 | [LLM-KG-Bench](https://github.com/AKSW/LLM-KG-Bench)|  LLM and KGs for QA| [Link](https://ceur-ws.org/Vol-3526/paper-04.pdf)
 | 27 | Docugami Knowledge Graph Retrieval Augmented Generation (KG-RAG) Datasets | -  | 2023 | [KG-RAG](https://github.com/docugami/KG-RAG-datasets)|  LLM and KGs for QA| -
 | 28 | How Credible Is an Answer From Retrieval-Augmented LLMs? Investigation and Evaluation With Multi-Hop QA  | ACL ARR   | 2024 |- |  LLM and KGs for QA| [Link](https://openreview.net/forum?id=YsmnPHBbx1f)
-| 29 | Can Knowledge Graphs Make Large Language Models More Trustworthy? An Empirical Study over Open-ended Question Answering  | arXiv  | 2024 |[OKGQA](https://anonymous.4open.science/r/OKGQA-CBB0) |  LLM and KGs for QA| [Link](https://arxiv.org/abs/2410.08085)
+| 29 | Can Knowledge Graphs Make Large Language Models More Trustworthy? An Empirical Study over Open-ended Question Answering  | arXiv  | 2024 |[OKGQA](https://github.com/Y-Sui/OKGQA) |  LLM and KGs for QA| [Link](https://arxiv.org/abs/2410.08085)
 | 30 | MiniRAG: Towards Extremely Simple Retrieval-Augmented Generation | arXiv  | 2025 | [LiHua-World](https://github.com/HKUDS/MiniRAG/tree/main/dataset/LiHua-World)|  LLM and KGs for QA| [Link](https://arxiv.org/abs/2501.06713)
 | 31 | Learn to Explain: Multimodal Reasoning via Thought Chains for Science Question Answering   | NeurIPS Dataset and Benchmarks Track | 2022 | [ScienceQA](https://github.com/lupantech/ScienceQA) | LLM and KGs for QA| [Link](https://proceedings.neurips.cc/paper_files/paper/2022/file/11332b6b6cf4485b84afadb1352d3a9a-Paper-Conference.pdf)
 | 32 | STaRK: Benchmarking LLM Retrieval on Textual and Relational Knowledge Bases  | NeurIPS Dataset and Benchmarks Track | 2024 | [STaRK](https://github.com/snap-stanford/STaRK) | LLM and KGs for QA| [Link](https://proceedings.neurips.cc/paper_files/paper/2024/hash/e607b1419e9ae7cd5cb5b5bb60c2ad5c-Abstract-Datasets_and_Benchmarks_Track.html)
 | 33 | mmRAG: A Modular Benchmark for Retrieval-Augmented Generation over Text, Tables, and Knowledge Graphs  | arXiv | 2025 | [mmRAG](https://huggingface.co/datasets/Askio/mmrag_benchmark) | LLM and KGs for QA| [Link](https://arxiv.org/abs/2505.11180)
 | 34 | LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs -- No Silver Bullet for LC or RAG Routing | arXiv | 2025 | [LaRA](https://github.com/Alibaba-NLP/LaRA) | LLM and KGs for QA| [Link](https://arxiv.org/abs/2502.09977)
 | 35 | KGQAGen: Diagnosing and Addressing Pitfalls in KG-RAG Datasets, toward More Reliable Benchmarking | - | 2025 | [KGQAGen](https://github.com/liangliang6v6/KGQAGen) | LLM and KGs for QA| -
+| 36 | AtomR: Atomic Operator-Empowered Large Language Models for Heterogeneous Knowledge Reasoning | KDD | 2025 | [BlendQA](https://github.com/THU-KEG/AtomR) |LLM and KGs for QA| -
 
 ### Industrial and Scientific Applications
 
@@ -370,3 +376,7 @@ If you find our work is useful,  please cite our paper by using the following Bi
 | 20 | Retrieval-Augmented Generation with Knowledge Graphs: A Survey  | OpenReview  |  2025 |  [Link](https://openreview.net/forum?id=ZikTuGY28C/)
 | 21 | Complex QA and language models hybrid architectures, Survey  | arXiv| 2023 |  [Link](https://arxiv.org/abs/2302.09051)
 | 22 | Injecting Domain-Specific Knowledge into Large Language Models: A Comprehensive Survey |arXiv  |  2025 |  [Link](https://arxiv.org/abs/2502.10708)
+| 23 | Graph-Augmented Large Language Model Agents: Current Progress and Future Prospects |arXiv  |  2025 |  [Link](https://arxiv.org/abs/2507.21407)
+| 24 | A Survey on Enhancing Large Language Models with Symbolic Reasoning |OpenReview  |  2025 |  [Link](https://openreview.net/forum?id=exg4ByWdrM)
+| 25 | Trustworthy Medical Question Answering: An Evaluation-Centric Survey |arXiv  |  2025 |  [Link](https://www.arxiv.org/abs/2506.03659)
+
