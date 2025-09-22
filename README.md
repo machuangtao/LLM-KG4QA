@@ -3,7 +3,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![](https://img.shields.io/github/last-commit/machuangtao/LLM-KG4QA?color=blue) ![Stars](https://img.shields.io/github/stars/machuangtao/LLM-KG4QA?color=blue)  ![Forks](https://img.shields.io/github/forks/machuangtao/LLM-KG4QA?color=blue&label=Fork)
 
 ## 🔔 News
-- **`2025-08`** Our [survey](https://arxiv.org/abs/2505.20099) has been accepted to **[EMNLP2025](https://2025.emnlp.org)** main conference.
+- **`2025-08`** Our [survey](https://machuangtao.github.io/LLM-KG4QA/survey-emnlp25) has been accepted to **[EMNLP2025](https://2025.emnlp.org)** main conference.
 - **`2025-05`** The preprint of our extended survey is avaliable on **[arXiv](https://arxiv.org/abs/2505.20099)**.
 - **`2025-02`** Our [tutorial](https://machuangtao.github.io/LLM-KG4QA/tutorial-edbt25) was accepted to be presented at **EDBT2025**.
 - **`2024-12`** We create this repository to maintain a paper list on **LLMs and KGs for QA.**
