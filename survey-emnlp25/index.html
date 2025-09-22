@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Primary Meta Tags -->
+  <!-- TODO: Replace with your paper title and author names -->
+  <meta name="title" content="Large Language Models Meet Knowledge Graphs for Question Answering: Synthesis and Opportunities - Chuangtao Ma, Yongrui Chen, Tianxing Wu, Arijit Khan, Haofen Wang">
+  <!-- TODO: Write a compelling 150-160 character description of your research -->
+  <meta name="description" content="This paper systematically study the state-of-the-art methods in synthesizing LLMs and KGs for QA and discuss how these approaches address the main challenges of different complex QA.">
+  <!-- TODO: Add 5-10 relevant keywords for your research area -->
+  <meta name="keywords" content="Question Answering, Retrieval Augmented Generation, Knowledge Graphs, Knowledge-Augmented Methods">
+  <!-- TODO: List all authors -->
+  <meta name="author" content="Chuangtao Ma, Yongrui Chen, Tianxing Wu, Arijit Khan, Haofen Wang">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <!-- TODO: Replace with your institution or lab name -->
+  <meta property="og:site_name" content="Aalborg University">
+  <!-- TODO: Same as paper title above -->
+  <meta property="og:title" content="Large Language Models Meet Knowledge Graphs for Question Answering: Synthesis and Opportunities - Chuangtao Ma, Yongrui Chen, Tianxing Wu, Arijit Khan, Haofen Wang">
+  <!-- TODO: Same as description above -->
+  <meta property="og:description" content="This paper systematically study the state-of-the-art methods in synthesizing LLMs and KGs for QA and discuss how these approaches address the main challenges of different complex QA.">
+  <!-- TODO: Replace with your actual website URL -->
+  <meta property="og:url" content="https://machuangtao.github.io/LLM-KG4QA/survey-emnlp25/">
+  <!-- TODO: Create a 1200x630px preview image and update path -->
+  <meta property="og:image" content="https://machuangtao.github.io/LLM-KG4QA/survey-emnlp25/1.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Large Language Models Meet Knowledge Graphs for Question Answering: Synthesis and Opportunities - Research Preview">
+  <meta property="article:published_time" content="2025-09-20T00:00:00.000Z">
+  <meta property="article:author" content="Chuangtao Ma">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="Question Answering">
+  <meta property="article:tag" content="Retrieval Augmented Generation">
+  <meta property="article:tag" content="Knowledge Graphs">
+  <meta property="article:tag" content="Knowledge-Augmented Methods">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- TODO: Replace with first author's Twitter handle -->
+  <meta name="twitter:creator" content="@DylanMa2018">
+  <!-- TODO: Same as paper title above -->
+  <meta name="twitter:title" content="Large Language Models Meet Knowledge Graphs for Question Answering: Synthesis and Opportunities">
+  <!-- TODO: Same as description above -->
+  <meta name="twitter:description" content="This paper systematically study the state-of-the-art methods in synthesizing LLMs and KGs for QA and discuss how these approaches address the main challenges of different complex QA.">
+  <!-- TODO: Same as social preview image above -->
+  <meta name="twitter:image" content="https://machuangtao.github.io/LLM-KG4QA/survey-emnlp25/1.png">
+  <meta name="twitter:image:alt" content="  Large Language Models Meet Knowledge Graphs for Question Answering: Synthesis and Opportunities- Research Preview">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="Large Language Models Meet Knowledge Graphs for Question Answering: Synthesis and Opportunities">
+  <meta name="citation_author" content="Ma, Chuangtao">
+  <meta name="citation_author" content="Chen, Yongrui">
+  <meta name="citation_author" content="Wu, Tianxing">
+  <meta name="citation_author" content="Khan, Arijit">
+  <meta name="citation_author" content="Wang, Haofen">
+  <meta name="citation_publication_date" content="2025">
+  <meta name="citation_conference_title" content="Proceedings of the 30th Conference on Empirical Methods in Natural Language Processing (EMNLP)">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2505.20099">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <!-- TODO: Replace with your paper title and authors -->
+  <title>Large Language Models Meet Knowledge Graphs for Question Answering: Synthesis and Opportunities - Chuangtao, Ma, et al.</title>
+  
+  <!-- Favicon and App Icons -->
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="static/images/favicon.ico"> -->
+  
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+  
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Large Language Models Meet Knowledge Graphs for Question Answering: Synthesis and Opportunities",
+    "description": "This paper systematically study the state-of-the-art methods in synthesizing LLMs and KGs for QA and discuss how these approaches address the main challenges of different complex QA.",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "Chuangtao Ma",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Aalborg University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Yongrui Chen",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Southeast University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Tianxing Wu",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Southeast University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Arijit Khan",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Bowling Green State University, Aalborg University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Haofen Wang",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Tongji University"
+        }
+      }
+    ],
+    "datePublished": "2025-09-20",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Proceedings of the 30th Conference on Empirical Methods in Natural Language Processing (EMNLP)"
+    },
+    "url": "https://machuangtao.github.io/LLM-KG4QA/survey-emnlp25/",
+    "image": "https://machuangtao.github.io/LLM-KG4QA/survey-emnlp25/1.png",
+    "keywords": ["Question Answering", "Retrieval Augmented Generation", "Knowledge Graphs", "Knowledge-Augmented Methods", "Large Language Models"],
+    "abstract": "Large language models (LLMs) have demonstrated remarkable performance on question-answering (QA) tasks because of their superior capabilities in natural language understanding and generation. However, LLM-based QA struggles with complex QA tasks due to poor reasoning capacity, outdated knowledge, and hallucinations. Several recent works synthesize LLMs and knowledge graphs (KGs) for QA to address the above challenges. In this survey, we propose a new structured taxonomy that categorizes the methodology of synthesizing LLMs and KGs for QA according to the categories of QA and the KG's role when integrating with LLMs. We systematically survey state-of-the-art methods in synthesizing LLMs and KGs for QA and compare and analyze these approaches in terms of strength, limitations, and KG requirements. We then align the approaches with QA and discuss how these approaches address the main challenges of different complex QA. Finally, we summarize the advancements, evaluation metrics, and benchmark datasets and highlight open challenges and opportunities.",
+    "citation": "@InProceedings{ma2025llmkg4qa, title={Large Language Models Meet Knowledge Graphs for Question Answering: Synthesis and Opportunities}, author={Ma, Chuangtao and Chen, Yongrui and Wu, Tianxing and Khan, Arijit and Wang, Haofen}, booktitle={Proceedings of the 30th Conference on Empirical Methods in Natural Language Processing (EMNLP)}, year={2025}, pages={xx--xx}}",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://machuangtao.github.io/LLM-KG4QA/survey-emnlp25/"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "Question Answering"
+      },
+      {
+        "@type": "Thing", 
+        "name": "Knowledge Augmented Methods"
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "INSTITUTION_OR_LAB_NAME",
+    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
+    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "sameAs": [
+      "https://twitter.com/YOUR_TWITTER_HANDLE",
+      "https://github.com/YOUR_GITHUB_USERNAME"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- More Works Dropdown -->
+  <div class="more-works-container">
+    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
+      <i class="fas fa-flask"></i>
+      More Works
+      <i class="fas fa-chevron-down dropdown-arrow"></i>
+    </button>
+    <div class="more-works-dropdown" id="moreWorksDropdown">
+      <div class="dropdown-header">
+        <h4>More Works from Our Lab</h4>
+        <button class="close-btn" onclick="toggleMoreWorks()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="works-list">
+        <!-- TODO: Replace with your lab's related works -->
+        <a href="https://openproceedings.org/2025/conf/edbt/paper-T4.pdf" class="work-item" target="_blank">
+          <div class="work-info">
+            <!-- TODO: Replace with actual paper title -->
+            <h5>Unifying Large Language Models and Knowledge Graphs for Question Answering: Recent Advances and Opportunities</h5>
+            <!-- TODO: Replace with brief description -->
+            <p>This tutorial aims to furnish an overview of the state-of-the-art advances in unifying LLMs with KGs for QA, by categorizing them into three groups according to the roles of KGs when unifying with LLMs.</p>
+            <!-- TODO: Replace with venue and year -->
+            <span class="work-venue">EDBT/ 2025</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+        <!-- TODO: Add more related works or remove extra items -->
+        <a href="https://arxiv.org/abs/2501.08686" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>Knowledge Graph-based Retrieval-Augmented Generation for Schema Matching</h5>
+            <p>This paper presents a Knowledge Graph-based Retrieval-Augmented Generation model for Schema Matching (KG-RAG4SM) that integrates knowledge graphs into retrieval-augmented generation for improved schema matching.</p>
+            <span class="work-venue">arXiv/ 2025</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- TODO: Replace with your paper title -->
+            <h1 class="title is-1 publication-title">Large Language Models Meet Knowledge Graphs for Question Answering: Synthesis and Opportunities</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- TODO: Replace with your paper authors and their personal links -->
+              <span class="author-block">
+                <a href="https://machuangtao.github.io" target="_blank">Chuangtao Ma</a>
+              </span>
+              <span class="author-block">
+                <a href="https://bahuia.github.io" target="_blank">Yongrui Chen</a>
+              </span>
+              <span class="author-block">
+                <a href="https://tianxing-wu.github.io" target="_blank">Tianxing Wu</a>
+              </span>
+              <span class="author-block">
+                <a href="https://homes.cs.aau.dk/~Arijit" target="_blank">Arijit Khan</a>
+              </span>
+              <span class="author-block">
+                <a href="https://tongji-kgllm.github.io/people/wang-haofen" target="_blank">Haofen Wang</a>
+              </span>
+            </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <!-- TODO: Replace with your institution and conference/journal info -->
+                    <span class="author-block">Aalborg University, Southeast University, Bowling Green State University, Tongji University<br>EMNLP 2025</span>
+                    <!-- TODO: Remove this line if no equal contribution -->
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- TODO: Update with your arXiv paper ID -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2505.20099" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- TODO: Add your supplementary material PDF or remove this section -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- TODO: Replace with your GitHub repository URL -->
+                  <span class="link-block">
+                    <a href="https://github.com/machuangtao/LLM-KG4QA" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- TODO: Update with your arXiv paper ID -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2505.20099" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser Image-->
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <p>
+<img src="/probex/static/images/1.png" alt="LLM-KG4QA" class="blend-img-background center-image" style="max-width: 100%; height: auto;" loading="lazy" />
+        </p>
+        <br>
+        <p>
+        This survey aims to outline the recent progress in integrating LLMs with KGs for complex QA, summarizing technical advances, and identifying open
+challenges and future research opportunities. The methodology of synthesizing LLMs and KGs and complex QA has been explored from different perspectives.
+A structured taxonomy from different perspectives aims to highlight the alignments between various LLM+KG approaches and different complex QA by discussing
+how the LLM+KG approaches with different roles of KG can address the challenges of complex QA.
+          </p>
+      </div>
+    </div>
+  </section>
+<!-- End teaser image -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <!-- TODO: Replace with your paper abstract -->
+          <p>
+            Large language models (LLMs) have demonstrated remarkable performance on question-answering (QA) tasks because of their superior capabilities in natural language understanding and generation. However, LLM-based QA struggles with complex QA tasks due to poor reasoning capacity, outdated knowledge, and hallucinations. Several recent works synthesize LLMs and knowledge graphs (KGs) for QA to address the above challenges. In this survey, we propose a new structured taxonomy that categorizes the methodology of synthesizing LLMs and KGs for QA according to the categories of QA and the KG's role when integrating with LLMs. We systematically survey state-of-the-art methods in synthesizing LLMs and KGs for QA and compare and analyze these approaches in terms of strength, limitations, and KG requirements. We then align the approaches with QA and discuss how these approaches address the main challenges of different complex QA. Finally, we summarize the advancements, evaluation metrics, and benchmark datasets and highlight open challenges and opportunities.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- TODO: Replace with your research result images -->
+        <img src="static/images/2.png" alt="Knowledge Integration and Fusion" loading="lazy"/>
+        <!-- TODO: Replace with description of this result -->
+        <h2 class="subtitle has-text-centered">
+          Knowledge integration and fusion aim to enhance language models (LMs) by integrating unknown knowledge into LMs for QA, in which the KGs and text are aligned via local subgraph extraction and entity linking, and then fed into the cross-model encoder to bidirectionally fuse text and KG to jointly train the language models for complex QA tasks. 
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/3.png" alt="Retrieval Augmented Generation" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          Retrieval Augmented Generation (RAG) serves as a retrieval and augmentation mechanism to first retrieves relevant knowledge from the text chunks based on vector-similarity retrieval, and then augments the LLMs by integrating the retrieved context with LLMs.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/4.png" alt="Agent-based KG Guidelines" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+         KGs can also be integrated into the reasoning process of LLMs as a component within an Agent system, this integration allows the Agent to leverage structured knowledge for augmenting the decision-making and problem-solving capabilities of LLMs.
+       </h2>
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/5.png" alt="KGs as Refiners and Validators" loading="lazy"/>
+      <h2 class="subtitle has-text-centered">
+        KGs act as  refiner and validator for LLMs, where the factual evidence from KGs enables LLMs to refine and verify the intermediate answers generated by LLMs, thereby enhancing the accuracy and reliability of the final answers.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2> -->
+
+      <!-- TODO: Replace with your poster PDF -->
+      <!-- <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title">BibTeX</h2>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+          <i class="fas fa-copy"></i>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-code"><code>@InProceedings{ma2025llmkg4qa,
+  title={Large Language Models Meet Knowledge Graphs for Question Answering: Synthesis and Opportunities},
+  author={Ma, Chuangtao and Chen, Yongrui and Wu, Tianxing and Khan, Arijit and Wang, Haofen},
+  booktitle={Proceedings of the 30th Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+  year={2025},
+  pages={xx--xx},
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
