@@ -4,19 +4,20 @@
 
 ## 🔔 News
 - **`2025-08`** Our [survey](https://machuangtao.github.io/LLM-KG4QA/survey-emnlp25) has been accepted to **[EMNLP2025](https://2025.emnlp.org)** main conference.
-- **`2025-05`** The preprint of our extended survey is avaliable on **[arXiv](https://arxiv.org/abs/2505.20099)**.
+- **`2025-05`** The preprint of our survey is avaliable on **[arXiv](https://arxiv.org/abs/2505.20099)**.
 - **`2025-02`** Our [tutorial](https://machuangtao.github.io/LLM-KG4QA/tutorial-edbt25) was accepted to be presented at **EDBT2025**.
 - **`2024-12`** We create this repository to maintain a paper list on **LLMs and KGs for QA.**
 
 If you find our work is useful,  please cite our paper by using the following BibTeX entry.
 
 ```
-@article{ma2025llmkg4qa,
+@inproceedings{ma2025llmkg4qa,
   title={Large Language Models Meet Knowledge Graphs for Question Answering: Synthesis and Opportunities},
   author={Ma, Chuangtao and Chen, Yongrui and Wu, Tianxing and Khan, Arijit and Wang, Haofen},
-  journal={arXiv preprint arXiv:2505.20099},
-  year={2025}
-}
+  booktitle={Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing,{EMNLP}2025},
+  year ={2025},
+  publisher={Association for Computational Linguistics},
+  pages = {24589--24608}
 ```
 
 ## Content
