@@ -248,7 +248,7 @@ If you find our work is useful,  please cite our paper by using the following Bi
 | 18 | LEGO-GraphRAG: Modularizing Graph-based Retrieval-Augmented Generation for Design Space Exploration   | arXiv  | 2024 | Path-based optimization   | [Link](https://arxiv.org/abs/2411.05844)
 | 19 | Query Optimization for Parametric Knowledge Refinement in Retrieval-Augmented Large Language Models   | arXiv    | 2024 | Query-based optimization   | [Link](https://arxiv.org/abs/2411.07820)
 | 20 | A MapReduce Approach to Effectively Utilize Long Context Information in Retrieval Augmented Language Models   | arXiv    | 2024 | MapReduce-based optimization   | [Link](https://arxiv.org/abs/2412.15271)
-| 21 | PIP-KAG: Mitigating Knowledge Conflicts in Knowledge-Augmented Generation via Parametric Pruning   | arXiv    | 2025 | Knowledge conflicts mitigation   | [Link](https://arxiv.org/abs/2502.15543)
+| 21 | ParamMute: Suppressing Knowledge-Critical FFNs for Faithful Retrieval-Augmented Generation   | NeurIPS    | 2025 | Knowledge conflicts mitigation   | [Link](https://arxiv.org/abs/2502.15543)
 | 22 | Direct Retrieval-augmented Optimization: Synergizing Knowledge Selection and Language Models   | arXiv    | 2025 | Knowledge conflicts mitigation   | [Link](https://arxiv.org/abs/2505.03075)
 
 
