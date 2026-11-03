@@ -1,6 +1,11 @@
 title: null
 name: "Unifying LLMs and KGs for QA: Recent Advances and Opportunities"
 author: " Chuangtao Ma, Yongrui Chen, Tianxing Wu, Arijit Khan, Haofen Wang"
+# Empty url => `absolute_url` emits root-relative paths (e.g. /LLM-KG4QA/x/),
+# so canonical/og URLs resolve against whatever host serves the page (the
+# custom domain), instead of GitHub Pages auto-filling machuangtao.github.io,
+# which 301-redirects and caused "Alternate page with proper canonical tag".
+url: ""
 theme: minima
 header_pages:
   - tutorial-edbt25/index.md
