@@ -250,6 +250,7 @@ If you find our work is useful,  please cite our paper by using the following Bi
 | 20 | A MapReduce Approach to Effectively Utilize Long Context Information in Retrieval Augmented Language Models   | arXiv    | 2024 | MapReduce-based optimization   | [Link](https://arxiv.org/abs/2412.15271)
 | 21 | ParamMute: Suppressing Knowledge-Critical FFNs for Faithful Retrieval-Augmented Generation   | NeurIPS    | 2025 | Knowledge conflicts mitigation   | [Link](https://arxiv.org/abs/2502.15543)
 | 22 | Direct Retrieval-augmented Optimization: Synergizing Knowledge Selection and Language Models   | arXiv    | 2025 | Knowledge conflicts mitigation   | [Link](https://arxiv.org/abs/2505.03075)
+| 23 | SPARK: Adaptive Parametric Knowledge Participation for Faithful Retrieval-Augmented Generation   | arXiv    | 2026 | Knowledge conflicts mitigation   | [Link](https://arxiv.org/abs/2606.27786)
 
 
 ### Data Management
