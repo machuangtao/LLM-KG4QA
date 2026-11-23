@@ -280,7 +280,9 @@ If you find our work is useful,  please cite our paper by using the following Bi
 | 21 | Symphony: Towards Trustworthy Question Answering and Verification using RAG over Multimodal Data Lakes  | Data Engineering Bulletin | 2024 | RDB QA | [Link](http://sites.computer.org/debull/A24dec/p135.pdf)  
 | 22 | Increasing the LLM Accuracy for Question Answering: Ontologies to the Rescue!  | arXiv | 2024 | RDB QA | [Link](https://arxiv.org/abs/2405.11706)  
 | 23 | GTR: Graph-Table-RAG for Cross-Table Question Answering  | arXiv | 2025 | RDB QA | [Link](https://arxiv.org/abs/2504.01346)  
-| 24 | ER-RAG: Enhance RAG with ER-Based Unified Modeling of Heterogeneous Data Sources  | arXiv | 2025 | RDB QA | [Link](https://arxiv.org/abs/2504.06271)    
+| 24 | ER-RAG: Enhance RAG with ER-Based Unified Modeling of Heterogeneous Data Sources  | arXiv | 2025 | RDB QA | [Link](https://arxiv.org/abs/2504.06271) 
+| 25 | Knowledge Graph-based Retrieval-Augmented Generation for Schema Matching | ACM TKDD | 2026 | Data Integration | [Link](https://doi.org/10.1145/3862591)
+| 26 | Cost-Efficient RAG for Entity Matching with LLMs: A Blocking-based Batch Processing Framework  | SIGMOD | 2026 | Data Integration | [Link](https://doi.org/10.1145/3856323)   
 
 
 ## 4. Benchmark and Applications
